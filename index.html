@@ -1,26 +1,85 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
-<head>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
 
-  <meta property="og:type" content="website">
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
 <meta property="og:title" content="diary">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="diary">
@@ -28,18 +87,39 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="diary">
 
-<link rel="canonical" href="http://yoursite.com/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-Hans'
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+
 
   <title>diary</title>
   
@@ -49,190 +129,207 @@
 
 
 
-  <noscript>
-  <style>
-  body { margin-top: 2rem; }
 
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before, .use-motion .logo-line-after {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
-    <main class="main">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-        <div class="header-inner"><div class="site-brand-container">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">diary</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">记录此刻 长期更新</p>
+      
+  </div>
+
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <i class="logo-line-before"></i>
-      <h1 class="site-title">diary</h1>
-      <i class="logo-line-after"></i>
-    </a>
-      <p class="site-subtitle" itemprop="description">记录此刻 长期更新</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
 
-
-
-
-
-
-
-</div>
-          
+<nav class="site-nav">
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">jiantong.liu</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">28</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-        <span class="site-state-item-count">29</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </header>
-
+  
+    <ul id="menu" class="menu">
       
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-      <div class="main-inner">
         
-
-        <div class="content index posts-expand">
-          
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
       
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/other/python/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/other/python/" class="post-title-link" itemprop="url">python Scrapyd 爬虫日记</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/other/python/" itemprop="url">python Scrapyd 爬虫日记</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/other/" itemprop="url" rel="index"><span itemprop="name">other</span></a>
+                  <a href="/categories/other/" itemprop="url" rel="index">
+                    <span itemprop="name">other</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -240,94 +337,155 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="爬虫部署管理控制台-开始学习的步骤"><a href="#爬虫部署管理控制台-开始学习的步骤" class="headerlink" title="爬虫部署管理控制台 开始学习的步骤"></a>爬虫部署管理控制台 开始学习的步骤</h2><ol>
-<li>新建项目。</li>
-<li>新建爬虫、</li>
-<li>编写配置文件。</li>
-<li>打包部署。</li>
-<li>到平台上检查</li>
-</ol>
-<h2 id="Anaconda完全入门指南"><a href="#Anaconda完全入门指南" class="headerlink" title="Anaconda完全入门指南"></a>Anaconda完全入门指南</h2><ul>
-<li>很多学习python的初学者甚至学了有一段时间的人接触到anaconda或者其他虚拟环境工具时觉得无从下手, 其主要原因就是不明白这些工具究竟有什么用, 是用来做什么的, 为什么要这么做, 比如笔者一开始也是不明白为啥除了python之外我还需要这么一个东西, 他和python到底有啥联系和区别, 为啥能用来管理python.</li>
-<li>参考： <a href="https://www.jianshu.com/p/eaee1fadc1e9" target="_blank" rel="noopener">https://www.jianshu.com/p/eaee1fadc1e9</a></li>
-</ul>
-<h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><ul>
-<li>新建一个名为ljt 的 scrapy 项目 </li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scrapy startproject ljt</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> ljt</span><br></pre></td></tr></table></figure>
-<ul>
-<li>修改cfg 将 url 指向 <a href="http://porters.vip" target="_blank" rel="noopener">http://porters.vip</a></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># Automatically created by: scrapy startproject</span><br><span class="line">#</span><br><span class="line"># For more information about the [deploy] section see:</span><br><span class="line"># https://scrapyd.readthedocs.io/en/latest/deploy.html</span><br><span class="line"></span><br><span class="line">[settings]</span><br><span class="line">default = ljt.settings</span><br><span class="line"></span><br><span class="line">[deploy:locals]</span><br><span class="line">url = http://porters.vip:6800/</span><br><span class="line">project = ljt</span><br></pre></td></tr></table></figure>
-<ul>
-<li>通过命令将 ljt 项目打包并部署到服务上</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapyd-deploy locals -p ljt</span><br></pre></td></tr></table></figure>
-<h2 id="创建爬虫"><a href="#创建爬虫" class="headerlink" title="创建爬虫"></a>创建爬虫</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy genspider -t basic csdn csdn.com</span><br></pre></td></tr></table></figure>
-<h2 id="如启动指定爬虫"><a href="#如启动指定爬虫" class="headerlink" title="如启动指定爬虫"></a>如启动指定爬虫</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://localhost:6800/schedule.json -d project=SMTaobao -d spider=smtb</span><br></pre></td></tr></table></figure>
-<h2 id="记录一下conda-brew-pip的安装位置"><a href="#记录一下conda-brew-pip的安装位置" class="headerlink" title="记录一下conda,brew,pip的安装位置"></a>记录一下conda,brew,pip的安装位置</h2><ul>
-<li>/Users/zj_macbook/anaconda/envs/python3/lib/python3.6/site-packages</li>
-<li><a href="https://blog.csdn.net/machinezj/article/details/60466962" target="_blank" rel="noopener">https://blog.csdn.net/machinezj/article/details/60466962</a></li>
-</ul>
+      
 
+      
+        
+          
+          爬虫部署管理控制台 开始学习的步骤
+新建项目。
+新建爬虫、
+编写配置文件。
+打包部署。
+到平台上检查
+
+Anaconda完全入门指南
+很多学习python的初学者甚至学了有一段时间的人接触到anaconda或者其他虚拟环境工具时觉得无从下手, 其主要原因就是不明白这些工具究竟有什么用, 是用来做什么
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/other/python/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/other/vim/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/other/vim/" class="post-title-link" itemprop="url">Vim插件与主题</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/other/vim/" itemprop="url">Vim插件与主题</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/other/" itemprop="url" rel="index"><span itemprop="name">other</span></a>
+                  <a href="/categories/other/" itemprop="url" rel="index">
+                    <span itemprop="name">other</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -335,84 +493,153 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>| 本教程为私人笔记，记录vim代码高亮设置主题插件以及vimrc配置</p>
-<ol>
-<li>先安装 vim </li>
-<li>在用户根目录“~/”下创建 .bash_profile(本来存在进行修改) .vimrc 与 .vimrc.bundles</li>
-<li>安装插件</li>
-</ol>
-<h3 id="这里贴出配置"><a href="#这里贴出配置" class="headerlink" title="这里贴出配置"></a>这里贴出配置</h3><h5 id="bash-profile"><a href="#bash-profile" class="headerlink" title=".bash_profile"></a>.bash_profile</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .bash_profile</span></span><br><span class="line">....</span><br><span class="line"><span class="comment">#配置开始</span></span><br><span class="line"><span class="built_in">alias</span> vi=vim</span><br><span class="line"><span class="built_in">alias</span> vim=mvim</span><br><span class="line"><span class="built_in">alias</span> mvim=<span class="string">'/usr/local/bin/mvim -v'</span></span><br><span class="line"><span class="comment"># 配置结束</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<h5 id="vimrc使用版本"><a href="#vimrc使用版本" class="headerlink" title=".vimrc使用版本"></a>.vimrc使用版本</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .vimrc 使用这个</span></span><br><span class="line"><span class="string">" Use Vim settings, rather then Vi settings. This setting must be as early as</span></span><br><span class="line"><span class="string">"</span> possible, as it has side effects.</span><br><span class="line"><span class="built_in">set</span> nocompatible</span><br><span class="line"></span><br><span class="line"><span class="string">" Highlight current line</span></span><br><span class="line"><span class="string">au WinLeave * set nocursorline nocursorcolumn</span></span><br><span class="line"><span class="string">au WinEnter * set cursorline cursorcolumn</span></span><br><span class="line"><span class="string">set cursorline cursorcolumn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Leader</span><br><span class="line"><span class="built_in">let</span> mapleader = <span class="string">","</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> backspace=2   <span class="string">" Backspace deletes like most programs in insert mode</span></span><br><span class="line"><span class="string">set nobackup</span></span><br><span class="line"><span class="string">set nowritebackup</span></span><br><span class="line"><span class="string">set noswapfile    "</span> http://robots.thoughtbot.com/post/18739402579/global-gitignore<span class="comment">#comment-458413287</span></span><br><span class="line"><span class="built_in">set</span> <span class="built_in">history</span>=50</span><br><span class="line"><span class="built_in">set</span> ruler         <span class="string">" show the cursor position all the time</span></span><br><span class="line"><span class="string">set showcmd       "</span> display incomplete commands</span><br><span class="line"><span class="built_in">set</span> incsearch     <span class="string">" do incremental searching</span></span><br><span class="line"><span class="string">set laststatus=2  "</span> Always display the status line</span><br><span class="line"><span class="built_in">set</span> autowrite     <span class="string">" Automatically :write before running commands</span></span><br><span class="line"><span class="string">set confirm       "</span> Need confrimation <span class="keyword">while</span> <span class="built_in">exit</span></span><br><span class="line"><span class="built_in">set</span> fileencodings=utf-8,gb18030,gbk,big5</span><br><span class="line"></span><br><span class="line"><span class="string">" Switch syntax highlighting on, when the terminal has colors</span></span><br><span class="line"><span class="string">"</span> Also switch on highlighting the last used search pattern.</span><br><span class="line"><span class="keyword">if</span> (&amp;t_Co &gt; 2 || has(<span class="string">"gui_running"</span>)) &amp;&amp; !exists(<span class="string">"syntax_on"</span>)</span><br><span class="line">  syntax on</span><br><span class="line">endif</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> filereadable(expand(<span class="string">"~/.vimrc.bundles"</span>))</span><br><span class="line">  <span class="built_in">source</span> ~/.vimrc.bundles</span><br><span class="line">endif</span><br><span class="line"></span><br><span class="line">filetype plugin indent on</span><br><span class="line"></span><br><span class="line">augroup vimrcEx</span><br><span class="line">  autocmd!</span><br><span class="line"></span><br><span class="line">  <span class="string">" When editing a file, always jump to the last known cursor position.</span></span><br><span class="line"><span class="string">  "</span> Don<span class="string">'t do it for commit messages, when the position is invalid, or when</span></span><br><span class="line"><span class="string">  " inside an event handler (happens when dropping a file on gvim).</span></span><br><span class="line"><span class="string">  autocmd BufReadPost *</span></span><br><span class="line"><span class="string">    \ if &amp;ft != '</span>gitcommit<span class="string">' &amp;&amp; line("'</span>\"<span class="string">") &gt; 0 &amp;&amp; line("</span><span class="string">'\"") &lt;= line("$") |</span></span><br><span class="line"><span class="string">    \   exe "normal g`\"" |</span></span><br><span class="line"><span class="string">    \ endif</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Cucumber navigation commands</span></span><br><span class="line"><span class="string">  autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix=_steps.rb</span></span><br><span class="line"><span class="string">  autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Set syntax highlighting for specific file types</span></span><br><span class="line"><span class="string">  autocmd BufRead,BufNewFile Appraisals set filetype=ruby</span></span><br><span class="line"><span class="string">  autocmd BufRead,BufNewFile *.md set filetype=markdown</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Enable spellchecking for Markdown</span></span><br><span class="line"><span class="string">  autocmd FileType markdown setlocal spell</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Automatically wrap at 80 characters for Markdown</span></span><br><span class="line"><span class="string">  autocmd BufRead,BufNewFile *.md setlocal textwidth=80</span></span><br><span class="line"><span class="string">augroup END</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Softtabs, 2 spaces</span></span><br><span class="line"><span class="string">set tabstop=2</span></span><br><span class="line"><span class="string">set shiftwidth=2</span></span><br><span class="line"><span class="string">set shiftround</span></span><br><span class="line"><span class="string">set expandtab</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Display extra whitespace</span></span><br><span class="line"><span class="string">set list listchars=tab:»·,trail:·</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher</span></span><br><span class="line"><span class="string">if executable('</span>ag<span class="string">')</span></span><br><span class="line"><span class="string">  " Use Ag over Grep</span></span><br><span class="line"><span class="string">  set grepprg=ag\ --nogroup\ --nocolor</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore</span></span><br><span class="line"><span class="string">  let g:ctrlp_user_command = '</span>ag %s -l --nocolor -g <span class="string">""</span><span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " ag is fast enough that CtrlP doesn'</span>t need to cache</span><br><span class="line">  <span class="built_in">let</span> g:ctrlp_use_caching = 0</span><br><span class="line">endif</span><br><span class="line"></span><br><span class="line"><span class="string">" Color scheme</span></span><br><span class="line"><span class="string">colorscheme molokai</span></span><br><span class="line"><span class="string">highlight NonText guibg=#060606</span></span><br><span class="line"><span class="string">highlight Folded  guibg=#0A0A0A guifg=#9090D0</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Make it obvious <span class="built_in">where</span> 80 characters is</span><br><span class="line"><span class="built_in">set</span> textwidth=80</span><br><span class="line"><span class="built_in">set</span> colorcolumn=+1</span><br><span class="line"></span><br><span class="line"><span class="string">" Numbers</span></span><br><span class="line"><span class="string">set number</span></span><br><span class="line"><span class="string">set numberwidth=5</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Tab completion</span><br><span class="line"><span class="string">" will insert tab at beginning of line,</span></span><br><span class="line"><span class="string">"</span> will use completion <span class="keyword">if</span> not at beginning</span><br><span class="line"><span class="built_in">set</span> wildmode=list:longest,list:full</span><br><span class="line"><span class="keyword">function</span>! InsertTabWrapper()</span><br><span class="line">    <span class="built_in">let</span> col = col(<span class="string">'.'</span>) - 1</span><br><span class="line">    <span class="keyword">if</span> !col || getline(<span class="string">'.'</span>)[col - 1] !~ <span class="string">'\k'</span></span><br><span class="line">        <span class="built_in">return</span> <span class="string">"\&lt;tab&gt;"</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">return</span> <span class="string">"\&lt;c-p&gt;"</span></span><br><span class="line">    endif</span><br><span class="line">endfunction</span><br><span class="line">inoremap &lt;Tab&gt; &lt;c-r&gt;=InsertTabWrapper()&lt;cr&gt;</span><br><span class="line">inoremap &lt;S-Tab&gt; &lt;c-n&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing</span></span><br><span class="line"><span class="string">let g:Tlist_Ctags_Cmd="</span>ctags --exclude=<span class="string">'*.js'</span><span class="string">"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Index ctags from any project, including those outside Rails</span><br><span class="line">map &lt;Leader&gt;ct :!ctags -R .&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Switch between the last two files</span></span><br><span class="line"><span class="string">nnoremap &lt;leader&gt;&lt;leader&gt; &lt;c-^&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Get off my lawn</span><br><span class="line">nnoremap &lt;Left&gt; :echoe <span class="string">"Use h"</span>&lt;CR&gt;</span><br><span class="line">nnoremap &lt;Right&gt; :echoe <span class="string">"Use l"</span>&lt;CR&gt;</span><br><span class="line">nnoremap &lt;Up&gt; :echoe <span class="string">"Use k"</span>&lt;CR&gt;</span><br><span class="line">nnoremap &lt;Down&gt; :echoe <span class="string">"Use j"</span>&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" vim-rspec mappings</span></span><br><span class="line"><span class="string">nnoremap &lt;Leader&gt;t :call RunCurrentSpecFile()&lt;CR&gt;</span></span><br><span class="line"><span class="string">nnoremap &lt;Leader&gt;s :call RunNearestSpec()&lt;CR&gt;</span></span><br><span class="line"><span class="string">nnoremap &lt;Leader&gt;l :call RunLastSpec()&lt;CR&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Run commands that require an interactive shell</span><br><span class="line">nnoremap &lt;Leader&gt;r :RunInInteractiveShell&lt;space&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Treat &lt;li&gt; and &lt;p&gt; tags like the block tags they are</span></span><br><span class="line"><span class="string">let g:html_indent_tags = 'li\|p'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Open new split panes to right and bottom, <span class="built_in">which</span> feels more natural</span><br><span class="line"><span class="built_in">set</span> splitbelow</span><br><span class="line"><span class="built_in">set</span> splitright</span><br><span class="line"></span><br><span class="line"><span class="string">" Quicker window movement</span></span><br><span class="line"><span class="string">nnoremap &lt;C-j&gt; &lt;C-w&gt;j</span></span><br><span class="line"><span class="string">nnoremap &lt;C-k&gt; &lt;C-w&gt;k</span></span><br><span class="line"><span class="string">nnoremap &lt;C-h&gt; &lt;C-w&gt;h</span></span><br><span class="line"><span class="string">nnoremap &lt;C-l&gt; &lt;C-w&gt;l</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> configure syntastic syntax checking to check on open as well as save</span><br><span class="line"><span class="built_in">let</span> g:syntastic_check_on_open=1</span><br><span class="line"><span class="built_in">let</span> g:syntastic_html_tidy_ignore_errors=[<span class="string">" proprietary attribute \"ng-"</span>]</span><br><span class="line"></span><br><span class="line">autocmd Syntax javascript <span class="built_in">set</span> syntax=jquery <span class="string">" JQuery syntax support</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set matchpairs+=&lt;:&gt;</span></span><br><span class="line"><span class="string">set statusline+=%&#123;fugitive#statusline()&#125; "</span>  Git Hotness</span><br><span class="line"></span><br><span class="line"><span class="string">" Nerd Tree</span></span><br><span class="line"><span class="string">let NERDChristmasTree=0</span></span><br><span class="line"><span class="string">let NERDTreeWinSize=40</span></span><br><span class="line"><span class="string">let NERDTreeChDirMode=2</span></span><br><span class="line"><span class="string">let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']</span></span><br><span class="line"><span class="string">let NERDTreeShowBookmarks=1</span></span><br><span class="line"><span class="string">let NERDTreeWinPos="</span>left<span class="string">"</span></span><br><span class="line"><span class="string">autocmd vimenter * if !argc() | NERDTree | endif "</span> Automatically open a NERDTree <span class="keyword">if</span> no files <span class="built_in">where</span> specified</span><br><span class="line">autocmd bufenter * <span class="keyword">if</span> (winnr(<span class="string">"$"</span>) == 1 &amp;&amp; exists(<span class="string">"b:NERDTreeType"</span>) &amp;&amp; b:NERDTreeType == <span class="string">"primary"</span>) | q | endif <span class="string">" Close vim if the only window left open is a NERDTree</span></span><br><span class="line"><span class="string">nmap &lt;F5&gt; :NERDTreeToggle&lt;cr&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Tagbar</span><br><span class="line"><span class="built_in">let</span> g:tagbar_width=35</span><br><span class="line"><span class="built_in">let</span> g:tagbar_autofocus=1</span><br><span class="line">nmap &lt;F6&gt; :TagbarToggle&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Emmet</span></span><br><span class="line"><span class="string">let g:user_emmet_mode='i' "</span> <span class="built_in">enable</span> <span class="keyword">for</span> insert mode</span><br><span class="line"></span><br><span class="line"><span class="string">" Search results high light</span></span><br><span class="line"><span class="string">set hlsearch</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> nohlsearch shortcut</span><br><span class="line">nmap -hl :nohlsearch&lt;cr&gt;</span><br><span class="line">nmap +hl :<span class="built_in">set</span> hlsearch&lt;cr&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Javascript syntax hightlight</span></span><br><span class="line"><span class="string">syntax enable</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> YouCompleteMe</span><br><span class="line"><span class="built_in">let</span> g:ycm_autoclose_preview_window_after_completion=1</span><br><span class="line">nnoremap &lt;leader&gt;g :YcmCompleter GoToDefinitionElseDeclaration&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" ctrlp</span></span><br><span class="line"><span class="string">set wildignore+=*/tmp/*,*.so,*.swp,*.zip     "</span> MacOSX/Linux<span class="string">"</span></span><br><span class="line"><span class="string">let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set laststatus=2 "</span> Always display the status line</span><br><span class="line"><span class="built_in">set</span> statusline+=%&#123;fugitive<span class="comment">#statusline()&#125; "  Git Hotness</span></span><br><span class="line"></span><br><span class="line">nnoremap &lt;leader&gt;w :w&lt;CR&gt;</span><br><span class="line">nnoremap &lt;leader&gt;q :q&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" RSpec.vim mappings</span></span><br><span class="line"><span class="string">map &lt;Leader&gt;t :call RunCurrentSpecFile()&lt;CR&gt;</span></span><br><span class="line"><span class="string">map &lt;Leader&gt;s :call RunNearestSpec()&lt;CR&gt;</span></span><br><span class="line"><span class="string">map &lt;Leader&gt;l :call RunLastSpec()&lt;CR&gt;</span></span><br><span class="line"><span class="string">map &lt;Leader&gt;a :call RunAllSpecs()&lt;CR&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Vim-instant-markdown doesn<span class="string">'t work in zsh</span></span><br><span class="line"><span class="string">set shell=bash\ -i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Snippets author</span></span><br><span class="line"><span class="string">let g:snips_author = '</span>Yuez<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Local config</span></span><br><span class="line"><span class="string">if filereadable($HOME . "/.vimrc.local")</span></span><br><span class="line"><span class="string">  source ~/.vimrc.local</span></span><br><span class="line"><span class="string">endif</span></span><br></pre></td></tr></table></figure>
-<h5 id="vimrc版本2"><a href="#vimrc版本2" class="headerlink" title=".vimrc版本2"></a>.vimrc版本2</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .vimrc  版本2  备用</span></span><br><span class="line"><span class="string">" Auto add head info</span></span><br><span class="line"><span class="string">"</span> .py file into add header</span><br><span class="line"><span class="keyword">function</span> HeaderPython()</span><br><span class="line">    call setline(1, <span class="string">"#!/usr/bin/env python"</span>)</span><br><span class="line">    call append(1, <span class="string">"# -*- coding: utf-8 -*-"</span>)</span><br><span class="line">    normal G</span><br><span class="line">    normal o</span><br><span class="line">endf</span><br><span class="line">autocmd bufnewfile *.py call HeaderPython()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">" 这里设置插件</span></span><br><span class="line"><span class="string">if filereadable(expand("</span>~/.vimrc.bundles<span class="string">"))</span></span><br><span class="line"><span class="string">  source ~/.vimrc.bundles</span></span><br><span class="line"><span class="string">endif</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>设置行号显示</span><br><span class="line"><span class="built_in">set</span> number</span><br><span class="line"></span><br><span class="line"><span class="string">"将行号设置为相对行号</span></span><br><span class="line"><span class="string">set relativenumber</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>显示标尺</span><br><span class="line"><span class="built_in">set</span> ruler</span><br><span class="line"></span><br><span class="line"><span class="string">" 编码</span></span><br><span class="line"><span class="string">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1</span></span><br><span class="line"><span class="string">set fileencoding=utf-8</span></span><br><span class="line"><span class="string">set encoding=utf-8</span></span><br><span class="line"><span class="string">set fencs=utf-8,gbk,gb2312,gb18030</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>语法高亮</span><br><span class="line">syntax <span class="built_in">enable</span></span><br><span class="line">syntax on</span><br><span class="line"></span><br><span class="line"><span class="string">" 高亮</span></span><br><span class="line"><span class="string">hi pythonSelf            ctermfg=174 guifg=#6094DB cterm=bold gui=bold</span></span><br><span class="line"><span class="string">let python_highlight_all=1</span></span><br><span class="line"><span class="string">syntax enable</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> 状态行颜色</span><br><span class="line">highlight StatusLine guifg=SlateBlue guibg=Yellow</span><br><span class="line">highlight StatusLineNC guifg=Gray guibg=White</span><br><span class="line"></span><br><span class="line"><span class="string">" 增强模式中的命令行自动完成操作</span></span><br><span class="line"><span class="string">set wildmenu</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> 总是显示状态行</span><br><span class="line"><span class="built_in">set</span> laststatus=2</span><br><span class="line"></span><br><span class="line"><span class="string">"命令行补全参数</span></span><br><span class="line"><span class="string">set wildmenu</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>设置tab键空4格</span><br><span class="line"><span class="built_in">set</span> tabstop=4</span><br><span class="line"></span><br><span class="line"><span class="string">"自动检测文件类型</span></span><br><span class="line"><span class="string">filetype plugin indent on</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>开启自动缩进，智能缩进</span><br><span class="line"><span class="built_in">set</span> autoindent</span><br><span class="line"><span class="built_in">set</span> cindent</span><br><span class="line"><span class="built_in">set</span> smartindent</span><br><span class="line"><span class="built_in">set</span> shiftwidth=4</span><br><span class="line"></span><br><span class="line"><span class="string">"映射光标在窗口间移动的快捷键</span></span><br><span class="line"><span class="string">nmap &lt;C-H&gt; &lt;C-W&gt;h</span></span><br><span class="line"><span class="string">nmap &lt;C-J&gt; &lt;C-W&gt;j</span></span><br><span class="line"><span class="string">nmap &lt;C-K&gt; &lt;C-W&gt;k</span></span><br><span class="line"><span class="string">nmap &lt;C-L&gt; &lt;C-W&gt;l</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>基本主题配置</span><br><span class="line"><span class="built_in">set</span> <span class="built_in">bg</span>=dark    		   <span class="string">"设置背景为黑色</span></span><br><span class="line"><span class="string">colorscheme gruvbox    "</span>设置主题为 gruvbox</span><br><span class="line"><span class="built_in">set</span> guioptions=        <span class="string">"去掉两边的scrollbar</span></span><br><span class="line"><span class="string">set guifont=Monaco:h17 "</span>设置字体和字的大小</span><br><span class="line"><span class="built_in">set</span> cuc</span><br><span class="line"><span class="built_in">set</span> cul</span><br><span class="line"><span class="built_in">set</span> incsearch		  <span class="string">"输入搜索内容时就显示搜索结果</span></span><br><span class="line"><span class="string">set ignorecase</span></span><br><span class="line"><span class="string">set hlsearch		  "</span>搜索时高亮显示被找到的文本</span><br><span class="line"></span><br><span class="line"><span class="string">"airline settings.</span></span><br><span class="line"><span class="string">let g:airline_theme = 'simple'</span></span><br><span class="line"><span class="string">let g:airline_powerline_fonts = 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">if !exists('g:airline_symbols')</span></span><br><span class="line"><span class="string">  let g:airline_symbols = &#123;&#125;</span></span><br><span class="line"><span class="string">endif</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">let g:airline_left_sep = ''</span></span><br><span class="line"><span class="string">let g:airline_left_alt_sep = ''</span></span><br><span class="line"><span class="string">let g:airline_right_sep = ''</span></span><br><span class="line"><span class="string">let g:airline_right_alt_sep = ''</span></span><br><span class="line"><span class="string">let g:airline_symbols.branch = ''</span></span><br><span class="line"><span class="string">let g:airline_symbols.readonly = ''</span></span><br><span class="line"><span class="string">let g:airline_symbols.linenr = ''</span></span><br><span class="line"><span class="string">let g:airline#extensions#tabline#enabled = 1</span></span><br><span class="line"><span class="string">"</span> show absolute file path <span class="keyword">in</span> status line</span><br><span class="line"><span class="built_in">let</span> g:airline_section_c = <span class="string">'%&lt;%F%m %#__accent_red#%&#123;airline#util#wrap(airline#parts#readonly(),0)&#125;%#__restore__#'</span></span><br><span class="line"><span class="string">" show tab number in tab line</span></span><br><span class="line"><span class="string">let g:airline#extensions#tabline#tab_nr_type = 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">map &lt;F5&gt; :NERDTreeToggle&lt;CR&gt;</span></span><br></pre></td></tr></table></figure>
-<h5 id="vimrc-bundles配置插件"><a href="#vimrc-bundles配置插件" class="headerlink" title=".vimrc.bundles配置插件"></a>.vimrc.bundles配置插件</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .vimrc.bundles</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> &amp;compatible</span><br><span class="line">  <span class="built_in">set</span> nocompatible</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">filetype off</span><br><span class="line"><span class="built_in">set</span> rtp+=~/.vim/bundle/vundle/</span><br><span class="line">call vundle<span class="comment">#rc()</span></span><br><span class="line"></span><br><span class="line"><span class="string">" Let Vundle manage Vundle</span></span><br><span class="line"><span class="string">Bundle 'gmarik/vundle'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Define bundles via Github repos</span><br><span class="line">Bundle <span class="string">'christoomey/vim-run-interactive'</span></span><br><span class="line">Bundle <span class="string">'Valloric/YouCompleteMe'</span></span><br><span class="line">Bundle <span class="string">'marijnh/tern_for_vim'</span></span><br><span class="line">Bundle <span class="string">'croaky/vim-colors-github'</span></span><br><span class="line">Bundle <span class="string">'danro/rename.vim'</span></span><br><span class="line">Bundle <span class="string">'majutsushi/tagbar'</span></span><br><span class="line">Bundle <span class="string">'kchmck/vim-coffee-script'</span></span><br><span class="line">Bundle <span class="string">'kien/ctrlp.vim'</span></span><br><span class="line">Bundle <span class="string">'pbrisbin/vim-mkdir'</span></span><br><span class="line">Bundle <span class="string">'scrooloose/syntastic'</span></span><br><span class="line">Bundle <span class="string">'slim-template/vim-slim'</span></span><br><span class="line">Bundle <span class="string">'thoughtbot/vim-rspec'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-bundler'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-endwise'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-fugitive'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-rails'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-surround'</span></span><br><span class="line">Bundle <span class="string">'vim-ruby/vim-ruby'</span></span><br><span class="line">Bundle <span class="string">'vim-scripts/ctags.vim'</span></span><br><span class="line">Bundle <span class="string">'vim-scripts/matchit.zip'</span></span><br><span class="line">Bundle <span class="string">'vim-scripts/tComment'</span></span><br><span class="line">Bundle <span class="string">"mattn/emmet-vim"</span></span><br><span class="line">Bundle <span class="string">"scrooloose/nerdtree"</span></span><br><span class="line">Bundle <span class="string">"Lokaltog/vim-powerline"</span></span><br><span class="line">Bundle <span class="string">"godlygeek/tabular"</span></span><br><span class="line">Bundle <span class="string">"msanders/snipmate.vim"</span></span><br><span class="line">Bundle <span class="string">"jelera/vim-javascript-syntax"</span></span><br><span class="line">Bundle <span class="string">"altercation/vim-colors-solarized"</span></span><br><span class="line">Bundle <span class="string">"othree/html5.vim"</span></span><br><span class="line">Bundle <span class="string">"xsbeats/vim-blade"</span></span><br><span class="line">Bundle <span class="string">"Raimondi/delimitMate"</span></span><br><span class="line">Bundle <span class="string">"groenewege/vim-less"</span></span><br><span class="line">Bundle <span class="string">"evanmiller/nginx-vim-syntax"</span></span><br><span class="line">Bundle <span class="string">"Lokaltog/vim-easymotion"</span></span><br><span class="line">Bundle <span class="string">"tomasr/molokai"</span></span><br><span class="line">Bundle <span class="string">"klen/python-mode"</span></span><br><span class="line">Bundle <span class="string">"morhetz/gruvbox"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> filereadable(expand(<span class="string">"~/.vimrc.bundles.local"</span>))</span><br><span class="line">  <span class="built_in">source</span> ~/.vimrc.bundles.local</span><br><span class="line">endif</span><br><span class="line"></span><br><span class="line">filetype on</span><br></pre></td></tr></table></figure>
-<p>参考文章：</p>
-<ul>
-<li>vim插件搜索 <a href="https://vimawesome.com/" target="_blank" rel="noopener">https://vimawesome.com/</a></li>
-<li>自动补全  <a href="https://www.jianshu.com/p/4a8b0e3503fa" target="_blank" rel="noopener">https://www.jianshu.com/p/4a8b0e3503fa</a></li>
-<li>插件主题  <a href="https://vitan.me/2018/06/19/Vim-Vundle-Markdown/" target="_blank" rel="noopener">https://vitan.me/2018/06/19/Vim-Vundle-Markdown/</a></li>
-<li>管理vim插件  <a href="https://linux.cn/article-5880-1.html" target="_blank" rel="noopener">https://linux.cn/article-5880-1.html</a></li>
-<li>配置原地址 <a href="https://github.com/samlaudev/ConfigurationFiles/blob/master/vim/vimrc" target="_blank" rel="noopener">https://github.com/samlaudev/ConfigurationFiles/blob/master/vim/vimrc</a></li>
-<li>这个vim配置不错 <a href="https://www.jianshu.com/p/a0b452f8f720" target="_blank" rel="noopener">https://www.jianshu.com/p/a0b452f8f720</a></li>
-</ul>
+      
 
+      
+        
+          
+          前言：| 本教程为私人笔记，记录vim代码高亮设置主题插件以及vimrc配置
+
+先安装 vim 
+在用户根目录“~/”下创建 .bash_profile(本来存在进行修改) .vimrc 与 .vimrc.bundles
+安装插件
+
+这里贴出配置.bash_profile12345678# .bas
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/other/vim/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/other/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/other/hexo/" class="post-title-link" itemprop="url">hexo 标签不显示问题</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/other/hexo/" itemprop="url">hexo 标签不显示问题</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/other/" itemprop="url" rel="index"><span itemprop="name">other</span></a>
+                  <a href="/categories/other/" itemprop="url" rel="index">
+                    <span itemprop="name">other</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -420,95 +647,153 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="tags-标签不显示"><a href="#tags-标签不显示" class="headerlink" title="tags 标签不显示"></a>tags 标签不显示</h2><ul>
-<li>新建一个页面，命名为 tags 。命令如下：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">"tags"</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>编辑刚新建的页面，将页面的类型设置为 tags ，主题将自动为这个页面显示标签云。页面内容如下：(type: “tags” 一定要加引号) </p>
-<p>  title: 标签<br>  date: 2018-09-07 11:45:56<br>  type: “tags”<br>  comments: false</p>
-</li>
-<li><p>在菜单中添加链接。编辑 主题配置文件 ，添加 tags 到 menu 中，如下:</p>
-</li>
-</ul>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>基于scaffolds/post 中的模板创建新的 md文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post yourname</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建分类配置</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建标签配置</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="hexo-增加评论系统"><a href="#hexo-增加评论系统" class="headerlink" title="hexo 增加评论系统"></a>hexo 增加评论系统</h2><ul>
-<li><a href="https://ryanluoxu.github.io/2017/11/27/Hexo-Next-%E6%B7%BB%E5%8A%A0-Gitment-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" target="_blank" rel="noopener">https://ryanluoxu.github.io/2017/11/27/Hexo-Next-%E6%B7%BB%E5%8A%A0-Gitment-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</a>   亲测可用</li>
-<li>我的评论系统不可用问题 是因为 没有开启配置     ：  lazy: true #</li>
-</ul>
-<h2 id="postman-启动爬虫"><a href="#postman-启动爬虫" class="headerlink" title="postman 启动爬虫"></a>postman 启动爬虫</h2><ul>
-<li><a href="https://www.getpostman.com/apps" target="_blank" rel="noopener">https://www.getpostman.com/apps</a></li>
-</ul>
+      
 
+      
+        
+          
+          tags 标签不显示
+新建一个页面，命名为 tags 。命令如下：
+
+1hexo new page "tags"
+
+编辑刚新建的页面，将页面的类型设置为 tags ，主题将自动为这个页面显示标签云。页面内容如下：(type: “tags” 一定要加引号) 
+  title: 标签  date: 20
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/other/hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/other/my_10_1_game/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/other/my_10_1_game/" class="post-title-link" itemprop="url">2018年10月1节后感悟</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/other/my_10_1_game/" itemprop="url">2018年10月1节后感悟</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/other/" itemprop="url" rel="index"><span itemprop="name">other</span></a>
+                  <a href="/categories/other/" itemprop="url" rel="index">
+                    <span itemprop="name">other</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -516,86 +801,151 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="鹫峰一行-（10-5）"><a href="#鹫峰一行-（10-5）" class="headerlink" title="鹫峰一行 （10/5）"></a>鹫峰一行 （10/5）</h2><ul>
-<li><a href="https://baike.baidu.com/item/%E9%B9%AB%E5%B3%B0" target="_blank" rel="noopener">鹫峰，位于海淀区北安河乡，原名秀峰，因岭头如一只兀立的雄鹫得名。其海拔约为450米，有数株古松挺立山巅，故有小黄山之称。著名景点有森林浴场，云岫亭等。</a></li>
-</ul>
-<blockquote>
-<p>我们早晨11点钟就来到了鹫峰，顺着蜿蜒的山路开始了长达1个多小时的爬山之旅，途中嬉戏打闹，使得压抑的工作氛围与生活压力得到了释放，倍感舒畅。</p>
-</blockquote>
-<blockquote>
-<p>途中经过观音洞、点将台、还债寺、望月石、与峰顶鹫峰石碑；其中最开心难忘的要数望月石上的经历，在此处也是停留的时间最长.(我们都爬上了望月石)在此处对山下风景一览无遗（可惜天气不太好，朦朦胧胧）。感谢陪伴我此行的亲人们！愿你们身体健康，事事如意！</p>
-</blockquote>
-<h2 id="白洋淀之旅-（10-3-4）"><a href="#白洋淀之旅-（10-3-4）" class="headerlink" title="白洋淀之旅 （10/3-4）"></a>白洋淀之旅 （10/3-4）</h2><ul>
-<li><a href="https://baike.baidu.com/item/%E7%99%BD%E6%B4%8B%E6%B7%80/236169" target="_blank" rel="noopener">白洋淀（淀为浅湖）是河北省最大的湖泊，主体位于河北省保定市安新县（雄安新区）境内 [1]  。白洋淀有大小两个范围：狭义或小白洋淀是周围淀泊里最大的淀，广义或大白洋淀是以狭义白洋淀为主体的、周围淀泊的总称，现有大小淀泊143个，平均年份蓄水量13.2亿立方米。</a></li>
-</ul>
-<blockquote>
-<p>三号乘坐火车来到荣城，优先荣城的当地司机带我们游览了雄县（长达40分钟的路程 单程）， 回来的路上经过华润大学（目前还不了解此学 只是在外面看了一下）容城县-服务中心，最后来到白洋淀，（安顿好住宿与午餐就差不多2点钟了）。2点左右正式开始游玩白洋淀。晚上8点才到住处！</p>
-</blockquote>
-<blockquote>
-<p>跟随导游坐上了船，长达40分钟的船程。真实过足了船瘾，（第一次坐这么长时间的船）。</p>
-</blockquote>
-<blockquote>
-<p>小兵张嘎小剧场、飞车、最后的摩天轮 观看整个白洋淀风景！</p>
-</blockquote>
+      
 
+      
+        
+          
+          鹫峰一行 （10/5）
+鹫峰，位于海淀区北安河乡，原名秀峰，因岭头如一只兀立的雄鹫得名。其海拔约为450米，有数株古松挺立山巅，故有小黄山之称。著名景点有森林浴场，云岫亭等。
+
+
+我们早晨11点钟就来到了鹫峰，顺着蜿蜒的山路开始了长达1个多小时的爬山之旅，途中嬉戏打闹，使得压抑的工作氛围与生活压力得
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/other/my_10_1_game/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/other/mysql/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/other/mysql/" class="post-title-link" itemprop="url">mysql自学笔记</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/other/mysql/" itemprop="url">mysql自学笔记</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/other/" itemprop="url" rel="index"><span itemprop="name">other</span></a>
+                  <a href="/categories/other/" itemprop="url" rel="index">
+                    <span itemprop="name">other</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -603,233 +953,156 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="数据库的三层结构"><a href="#数据库的三层结构" class="headerlink" title="数据库的三层结构"></a>数据库的三层结构</h2><ul>
-<li>node应用程序</li>
-<li>dbms (数据库管理系统)  编译 （费时间）-》 执行 -》 缓存（分页存储过程， 触发器）</li>
-<li>数据库</li>
-</ul>
-<h2 id="数据库优化"><a href="#数据库优化" class="headerlink" title="数据库优化"></a>数据库优化</h2><ul>
-<li>标的设计合理化 符合3NF</li>
-<li>添加索引： 普通索引， 主键索引， 唯一索引， 全文索引</li>
-<li>分表技术：  水平分割，垂直分割</li>
-<li>读写 ：（写 updata, delete, add）分离</li>
-<li>存储过程： 模块化编程 可以提高速度</li>
-<li>对 mysql 配置的优化 （配置最大并发数 my.ini max_connections=100 (一般网站调到1000左右) ， 缓存的大小）</li>
-<li>服务器硬件的升级 （内存小， cpu）</li>
-<li>定时的清除不需要的数据， 定时进行碎片整理（MYISAM）</li>
-</ul>
-<h3 id="什么表是三范式的表（3NF）"><a href="#什么表是三范式的表（3NF）" class="headerlink" title="什么表是三范式的表（3NF）"></a>什么表是三范式的表（3NF）</h3><ul>
-<li>表的范式： 首先符合1范式 才能满足2范式 进一步满足3范式 （最高6范式）</li>
-<li>1NF: 及 属性的表的列具有原子性 不可在分解  及列的信息不可分解 （每个信息可以明确的表明含义） 关系型数据 自动满足1NF  </li>
-<li>2NF 表中的记录是唯一的  （通常设置一个主键来满足  主键： 不含业务逻辑， 自增）</li>
-<li>3NF 表中不应该有 冗余数据  （表中的数据如果能推导出来 就不应该单独写一个字段）—– 查询的时候，多表连续查询</li>
-<li>在表 一对多的情况下 为了提高效率 做反3范式 可以存在冗余数据</li>
-</ul>
-<h3 id="sql语句优化"><a href="#sql语句优化" class="headerlink" title="sql语句优化"></a>sql语句优化</h3><p>–| 问题是： 如何在一个大项目中，迅速的定位执行慢的语句   （慢查询）</p>
-<ul>
-<li>了解mysql 数据库的一些运行状态 如何查询  （比如： 想知道mysql 运行时间， 一共执行了多少次，add, update，  当前的链接）</li>
-<li><p>常用的命令：  (语句一定要加分号)</p>
-<ol>
-<li>show status; 查看状态</li>
-<li>show [seesion|global] status like ‘uptime’;  启动时间  ‘com_select’ ‘insert’ ‘delete’  默认 sesison 当前会话   global 从启动到现在所有<br> ‘connections’ 查看链接次数    / 显示慢查询  ‘slow_queries’</li>
-<li>如何定位慢查询： （默认情况下 10s 才是慢查询 测试先修改为1s ）<a href="https://blog.csdn.net/keketrtr/article/details/78673565" target="_blank" rel="noopener">慢查询命令</a></li>
-<li>show VARIABLES like ‘long_query_time’; 显示当前慢查询时间</li>
-<li>set long_query_time=1; 设置慢查询时间</li>
-</ol>
-</li>
-<li><p>构建一个大表  400万条数据  （存储过程构建) </p>
-</li>
-<li>(花费我不少时间)创建函数时出现的问题：<a href="http://www.cnblogs.com/kerrycode/p/7641835.html" target="_blank" rel="noopener">http://www.cnblogs.com/kerrycode/p/7641835.html</a>  开启二进制日志  set log_bin_trust_function_creators=1;  （这知识临时创建的临时的函数）<br>  这里创建函数 跟 navicat 中创建事物不一样 这里是全局函数；</li>
-<li>call insert_emp(10001, 4000000); 插入数据 400万条数据；  （存储过程不写了 随机字符串函数也不写了）</li>
-<li>这个时候如果我们慢查询就会被统计到到 （超过1s的）</li>
-<li>把慢查询的记录到我们的日志当中（默认 MySQL不记录慢查询日志， 启动mysql 的时候启动慢查询记录）</li>
-</ul>
-<h3 id="开始优化（索引优化）"><a href="#开始优化（索引优化）" class="headerlink" title="开始优化（索引优化）"></a>开始优化（索引优化）</h3><ul>
-<li><p>数据库第一次搜索响应会慢，如果使用相同的 sql 语句， sql 会缓存sql 查询的结果，响应给客户端；</p>
-</li>
-<li><p>四种索引（主键索引，全文索引，唯一索引， 普通索引）（索引会记录文件内容的物理位置）</p>
-<ol>
-<li><p>添加索引</p>
-<ul>
-<li>主键索引添加  （概念： 把表中的某一列设置为主键的时候，该列就是主键索引）</li>
-<li>普通索引添加 （一般先创建表 在创建普通索引） create index 索引名 on 表 （列1， 列2）；</li>
-<li>全文索引  （主要是针对于文件， 文本检索。比如文章） 全文索引针对 MYISAm 有用  （myisam 介绍： <a href="https://www.cnblogs.com/avivahe/p/5427884.html）" target="_blank" rel="noopener">https://www.cnblogs.com/avivahe/p/5427884.html）</a><br>  说明：<ol>
-<li>fulltext 全文索引只针对 myisam 生效</li>
-<li>mysql 提供的 fulltext 针对英文生效 （中文： sphinx(coreseek)技术处理中文）</li>
-<li>使用方法  match(字段名) against(‘关键字’);</li>
-<li>全文索引有停止词的概念， 对一些常见的词 不会创建索引。因为在文本中创建索引是一个无穷大的数。  这些词就成为 ’停止次‘</li>
-</ol>
-</li>
-<li>当某一些被指定为 unique 时， 这一列就是唯一索引；unique 可以为 null 并且可以有多个 空字符串‘’ 只能有一个  、、   主键索引不能为空也不能重复<br>  create table ddd(id int primary key auto_increment , name varchar(32) unique); 这时, name 列就是一个唯一索引.</li>
-<li>创建多列索引 alter talbe 表名 add index myind (dname, loc)  (解释： 会在当前表中 dname列于loc列 创建共同的索引， 索引名为 myind)<br>  把dept表中，我增加几个部门: alter table dept add index my_ind (dname,loc); //  dname 左边的列,loc就是右边的列<br>  说明，如果我们的表中有复合索引(索引作用在多列上)， 此时我们注意:<ol>
-<li>对于创建的多列索引，只要查询条件使用了最左边的列，索引一般就会被使用。 explain select * from dept where loc=’aaa’\G (不会使用索引)</li>
-<li>对于使用like的查询，查询如果是  ‘%aaa’ 不会使用到索引  <strong><em> ‘aaa%’ 会使用到索引。 </em></strong></li>
-<li>如果条件中有or，即使其中有条件带索引也不会使用。换言之，就是要求使用的所有字段，都必须建立索引, 我们建议大家尽量避免使用or 关键字   select * from dept where dname=’xxx’ or loc=’xx’ or deptno=45</li>
-<li>如果列类型是字符串，那一定要在条件中将数据使用引号引用起来。    否则不使用索引。(添加时,字符串必须’’), 也就是，如果列是字符串类型，就一定要用 ‘’ 把他包括起来.</li>
-<li>如果mysql估计使用全表扫描要比使用索引快，则不使用索引。</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>查询索引</p>
-<ul>
-<li>desc 表名； （最简单 缺点：不能够显示索引的名字）</li>
-<li>show index[es] from 表名；</li>
-<li>show keys from 表名；</li>
-</ul>
-</li>
-<li>删除<ul>
-<li>alter table 表名 drop index 索引名；</li>
-<li>删除主键索引   alter table 表名 drop primary key; (因为只有一列是主键索引， 所以不需要指定列名)</li>
-</ul>
-</li>
-<li>修改<ul>
-<li>先删除 在创建；</li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p>索引使用的注意事项<br>  索引的代价：</p>
-<ol>
-<li>占用磁盘空间</li>
-<li>对dml （updata delete insert）有影响 会维护索引文件  </li>
-<li><p>btree 检索方式 （存储引擎： myisam, innodb 都是 btree检索方式 二叉树）（ 存储引擎：memory（也叫堆）/heap 用 hash/btree   (比较古老)）</p>
-<p>在那些列上适合添加索引：</p>
-</li>
-<li>较为频繁作为 查询条件的  字段 应该创建索引</li>
-<li>唯一性的词不适合作为索引 例如：性别-男</li>
-<li><p>更新非常频繁的字段也不能创建索引   例如：登录的次数  select * from eee where logincount=1  </p>
-<p>总结：满足一下条件创建索引</p>
-</li>
-<li>肯定在 where 中经常使用的字段创建索引</li>
-<li>该字段的内容不是唯一的几个值 例如性别 </li>
-<li><p>字段内容不是频繁变化的</p>
-<p>如何查看索引使用的情况: show status like ‘Handler_read%’;<br>大家可以注意：</p>
-</li>
-<li>handler_read_key:这个值越高越好，越高表示使用索引查询到的次数。</li>
-<li>handler_read_rnd_next:这个值越高，说明查询低效</li>
-</ol>
-</li>
-<li><p>大批量插入数据（mysql 管理员）导数据的使用；了解</p>
-<ol>
-<li>对于myisam<ul>
-<li>alter table table_anme disable keys; 关闭索引</li>
-<li>loading data // insert 语句；</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>alter table table_name enable keys;</li>
-</ul>
-<ol start="2">
-<li>对于innodb;<ul>
-<li>将要导入的数据按照主键排序</li>
-<li>set unique_checks=0; 关闭唯一性校验</li>
-<li>set autocommit=0 关闭自动提交</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-<h3 id="sql-语句的优化-（小技巧）"><a href="#sql-语句的优化-（小技巧）" class="headerlink" title="sql 语句的优化 （小技巧）"></a>sql 语句的优化 （小技巧）</h3><ul>
-<li>在使用 group by 分组查询时 ，默认分组后 还会排序， 可能会降低速度；  解决方案：  在group by 后面增加 order by null 就可以防止排序.</li>
-<li>有些时候可以用连接 （join）来替代子查询，因为使用join mysql 不需要再内存中创建临时表； select * from bbb left join emp1 on bbb.name=emp1.deptno (左外连接)</li>
-<li>myisam 存储引擎 —-》 要定时进行碎片整理； 当你删除数据后， 真正的文件不会缩小 ，整理语句：  optimize table test100; </li>
-</ul>
-<h3 id="定时维护"><a href="#定时维护" class="headerlink" title="定时维护"></a>定时维护</h3><h3 id="sql语句搜集"><a href="#sql语句搜集" class="headerlink" title="sql语句搜集"></a>sql语句搜集</h3><ul>
-<li>查看表的结构  desc dept;</li>
-<li>创建表  create table bbb(id int, name varchar(32) not null defatul ‘’);</li>
-<li>给表添加索引 alter table bbb add primary key (id);</li>
-<li>如何使用全文索引:<br>  错误用法:<br>  select <em> from articles where body like ‘%mysql%’; 【不会使用到全文索引】<br>  证明:<br>  explain  select </em> from articles where body like ‘%mysql%’<br>  正确的用法是:<br>  select * from articles where match(title,body) against(‘database’); 【可以】<ul>
-<li>group by 使用方式 <a href="https://blog.csdn.net/qq_15037231/article/details/79975646；" target="_blank" rel="noopener">https://blog.csdn.net/qq_15037231/article/details/79975646；</a></li>
-<li>select * from bbb, emp1 where bbb.name=emp1.deptno;（简单的）  </li>
-</ul>
-</li>
-</ul>
-<h3 id="数据库文件解释"><a href="#数据库文件解释" class="headerlink" title="数据库文件解释"></a>数据库文件解释</h3><ul>
-<li>emp.frm 表的结构文件<br>emp.MYD 表的内容<br>emp.MYI 表的索引</li>
-</ul>
-<h3 id="数据库存储引擎"><a href="#数据库存储引擎" class="headerlink" title="数据库存储引擎"></a>数据库存储引擎</h3><ul>
-<li>innodb （订单表， 账户表）（对事物要求高，保存的数据都是重要数据）<ol>
-<li>优点：支持事务和外键，数据完整性机制比较完备；可以用SHOW TABLE STATUS查得某个库或表的磁盘占用  </li>
-<li>缺点：速度超慢，磁盘空间占用多；所有库都存于一个（通常情况）或数个文件中，无法通过操作系统了解某个库或表的占用空间</li>
-</ol>
-</li>
-<li>myisam  （bbs 中的发帖表 和 回复表）（ 以查询和添加为主，对事物要求不高）<ol>
-<li>优点：速度快，磁盘空间占用少；某个库或表的磁盘占用情况既可以通过操作系统查相应的文件（夹）的大小得知，也可以通过SQL语句SHOW TABLE STATUS查得</li>
-<li>缺点：没有数据完整性机制，即不支持事务和外键</li>
-</ol>
-</li>
-<li><p>memory 存储， （使用推荐： 我们的数据变化频繁，不需要入库，同时又频繁的查询和修改）</p>
-</li>
-<li><p>问 MyISAM 和 INNODB的区别</p>
-<ol>
-<li>事务安全</li>
-<li>查询和添加速度</li>
-<li>支持全文索引</li>
-<li>锁机制</li>
-</ol>
-</li>
-</ul>
+      
 
+      
+        
+          
+          数据库的三层结构
+node应用程序
+dbms (数据库管理系统)  编译 （费时间）-》 执行 -》 缓存（分页存储过程， 触发器）
+数据库
+
+数据库优化
+标的设计合理化 符合3NF
+添加索引： 普通索引， 主键索引， 唯一索引， 全文索引
+分表技术：  水平分割，垂直分割
+读写 ：（写 updat
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/other/mysql/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/git/gitLink/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/git/gitLink/" class="post-title-link" itemprop="url">git-links</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/git/gitLink/" itemprop="url">git-links</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -837,85 +1110,150 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="links"><a href="#links" class="headerlink" title="links"></a>links</h2><ul>
-<li>省市区联动选择: <a href="https://dwqs.github.io/vue-area-linkage/" target="_blank" rel="noopener">https://dwqs.github.io/vue-area-linkage/</a></li>
-<li>设计模式总结 <a href="https://github.com/Samaritan89/design_pattern" target="_blank" rel="noopener">https://github.com/Samaritan89/design_pattern</a>  </li>
-<li>《Koa2进阶学习笔记》持续更新… <a href="https://chenshenhai.github.io/koa2-note/" target="_blank" rel="noopener">https://chenshenhai.github.io/koa2-note/</a></li>
-<li>2017杭州云栖大会精华PPT  <a href="https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt" target="_blank" rel="noopener">https://github.com/Alibaba-Technology/hangzhouYunQi2017ppt</a></li>
-<li>一款手势驱动的裁图插件/A gesture to drive image cropping plug-in  <a href="https://github.com/baijunjie/PhotoClip.js" target="_blank" rel="noopener">https://github.com/baijunjie/PhotoClip.js</a></li>
-<li>vue2.0 admin / a management system template <a href="http://panjiachen.github.io/vue-element-admin" target="_blank" rel="noopener">http://panjiachen.github.io/vue-element-admin</a></li>
-<li>技术博客 日常学习的一些总结 js node summary css <a href="https://github.com/Samaritan89/blog" target="_blank" rel="noopener">https://github.com/Samaritan89/blog</a></li>
-<li>浩麟的技术博客 webpack 大牛 <a href="https://github.com/gwuhaolin/blog" target="_blank" rel="noopener">https://github.com/gwuhaolin/blog</a></li>
-<li>一个基于Koa2的轻量级RESTful API Server脚手架。 <a href="https://github.com/yi-ge/koa2-API-scaffold" target="_blank" rel="noopener">https://github.com/yi-ge/koa2-API-scaffold</a></li>
-<li>一个博客 还是内容挺多的 <a href="https://github.com/hehongwei44/my-blog" target="_blank" rel="noopener">https://github.com/hehongwei44/my-blog</a></li>
-<li>小节点静态Web服务器  <a href="https://github.com/Samaritan89/anydoor" target="_blank" rel="noopener">https://github.com/Samaritan89/anydoor</a></li>
-<li>暑期任务系列之精读《JavaScript设计模式与开发实践》 <a href="https://github.com/xingbofeng/JavaScript-design-patterns" target="_blank" rel="noopener">https://github.com/xingbofeng/JavaScript-design-patterns</a></li>
-<li>学习一下postcss <a href="https://github.com/whidy/postcss-study" target="_blank" rel="noopener">https://github.com/whidy/postcss-study</a></li>
-<li>Node Koa2 实战 🇨🇳 —— iKcamp 出品 <a href="http://www.ikcamp.com" target="_blank" rel="noopener">www.ikcamp.com</a>   (<a href="https://github.com/ikcamp/koa2-tutorial" target="_blank" rel="noopener">https://github.com/ikcamp/koa2-tutorial</a>)</li>
-<li>日常教学零碎代码,部分采自网络 <a href="https://github.com/15110500442/rg201python" target="_blank" rel="noopener">https://github.com/15110500442/rg201python</a></li>
-<li>Switch hosts quickly! <a href="https://oldj.github.io/SwitchHosts/" target="_blank" rel="noopener">https://oldj.github.io/SwitchHosts/</a></li>
-<li>koa2 学习总结 learing summary   <a href="https://github.com/JesseZhao1990/blog" target="_blank" rel="noopener">https://github.com/JesseZhao1990/blog</a></li>
-<li>hbq  git  <a href="https://github.com/githbq/hbq-typescript-react-boilerplate" target="_blank" rel="noopener">https://github.com/githbq/hbq-typescript-react-boilerplate</a></li>
-</ul>
+      
 
+      
+        
+          
+          links
+省市区联动选择: https://dwqs.github.io/vue-area-linkage/
+设计模式总结 https://github.com/Samaritan89/design_pattern  
+《Koa2进阶学习笔记》持续更新… https://chenshenhai.g
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/git/gitLink/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/git/gitlab-server/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/git/gitlab-server/" class="post-title-link" itemprop="url">gitlab Server 搭建</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/git/gitlab-server/" itemprop="url">gitlab Server 搭建</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -923,82 +1261,148 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h2><p>以Centos7为例，准备一台至少内存为4G的机器。</p>
-<h2 id="2-安装依赖软件"><a href="#2-安装依赖软件" class="headerlink" title="2. 安装依赖软件"></a>2. 安装依赖软件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y git vim gcc glibc-static telnet</span><br><span class="line">sudo yum install -y curl policycoreutils-python openssh-server</span><br><span class="line">sudo systemctl enable sshd</span><br><span class="line">sudo systemctl start sshd</span><br><span class="line"></span><br><span class="line">sudo yum install postfix</span><br><span class="line">sudo systemctl enable postfix</span><br><span class="line">sudo systemctl start postfix</span><br></pre></td></tr></table></figure>
-<h2 id="3-设置gitlab安装源"><a href="#3-设置gitlab安装源" class="headerlink" title="3. 设置gitlab安装源"></a>3. 设置gitlab安装源</h2><p>如果在国内的话，可以尝试使用清华大学的源。</p>
-<p>新建 /etc/yum.repos.d/gitlab-ce.repo，内容为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[gitlab-ce]</span><br><span class="line">name=Gitlab CE Repository</span><br><span class="line">baseurl=https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el$releasever/</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br></pre></td></tr></table></figure>
-<p>如果在国外的话，可以使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash</span><br></pre></td></tr></table></figure>
-<h2 id="4-安装GitLab"><a href="#4-安装GitLab" class="headerlink" title="4. 安装GitLab"></a>4. 安装GitLab</h2><p>关于域名，如果要是设置域名，则如下，这个域名可以是真实购买的域名，如果您要把gitlab安装到公网比如阿里云上的话。</p>
-<p>如果只是想本地测试，则可以像下面一样，设置一个example的域名，然后记得在本地你的笔记本设置host，如果是MAC就在 /etc/hosts里添加 一行 <code>192.168.211.10 gitlab.example.com</code>  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo EXTERNAL_URL=&quot;http://gitlab.example.com&quot; yum install -y gitlab-ce</span><br></pre></td></tr></table></figure>
-<p>如果不想设置域名，或者想将来再考虑，可以直接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y gitlab-ce</span><br></pre></td></tr></table></figure>
-<p>安装完成以后，运行下面的命令进行配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl reconfigure</span><br></pre></td></tr></table></figure>
-<h2 id="5-登陆和修改密码"><a href="#5-登陆和修改密码" class="headerlink" title="5. 登陆和修改密码"></a>5. 登陆和修改密码</h2><p>打开<a href="http://gitlab.example.com/" target="_blank" rel="noopener">http://gitlab.example.com/</a> 修改root用户密码，然后使用root和新密码登陆。</p>
-<!-- ![gitlab](img/gitlab-1.png) -->
-<p>参考 <a href="https://about.gitlab.com/installation" target="_blank" rel="noopener">https://about.gitlab.com/installation</a></p>
+      
 
+      
+        
+          
+          1. 准备工作以Centos7为例，准备一台至少内存为4G的机器。
+2. 安装依赖软件12345678sudo yum install -y git vim gcc glibc-static telnetsudo yum install -y curl policycoreutils-python 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/git/gitlab-server/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/git/gitcommand/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/git/gitcommand/" class="post-title-link" itemprop="url">git-command</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/git/gitcommand/" itemprop="url">git-command</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1006,83 +1410,151 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><ul>
-<li><p>当被跟踪的文件里面有不想跟踪的文件时，使用命令git rm删除文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached abc.txt    abc.txt的跟踪，并保留在本地。</span><br><span class="line"></span><br><span class="line">git rm --f abc.txt    abc.txt的跟踪，并且删除本地文件。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在git init的目录下建立.gitignore文件，使用如下语法进行填写文件即可。</p>
-<ul>
-<li>/abc/ 过滤整个文件夹</li>
-<li>*.zip 过滤所有.zip文件</li>
-<li>/mtk/do.c 过滤某个具体文件</li>
-</ul>
-</li>
-<li><p>指定要将哪些文件添加到版本管理中<br>  <strong><em> 开头多了一个感叹号，Git会将满足这类规则的文件添加到版本管理中 </em></strong></p>
-<ul>
-<li>!*.zip</li>
-<li>!/abc/1.md</li>
-</ul>
-</li>
-</ul>
+      
 
+      
+        
+          
+          git
+当被跟踪的文件里面有不想跟踪的文件时，使用命令git rm删除文件
+123git rm --cached abc.txt    abc.txt的跟踪，并保留在本地。git rm --f abc.txt    abc.txt的跟踪，并且删除本地文件。
+
+在git init的目录下建立.giti
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/git/gitcommand/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/fe/vscode/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/fe/vscode/" class="post-title-link" itemprop="url">vscode 插件与功能使用</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/fe/vscode/" itemprop="url">vscode 插件与功能使用</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/FE/" itemprop="url" rel="index"><span itemprop="name">FE</span></a>
+                  <a href="/categories/FE/" itemprop="url" rel="index">
+                    <span itemprop="name">FE</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1090,130 +1562,169 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="插件区"><a href="#插件区" class="headerlink" title="插件区"></a>插件区</h2><table>
-<thead>
-<tr>
-<th style="text-align:left">插件名</th>
-<th style="text-align:left">作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Markdown Preview Enhanced</td>
-<td style="text-align:left">markdown的视图工具</td>
-</tr>
-<tr>
-<td style="text-align:left">gitlens</td>
-<td style="text-align:left">git每一行提示信息与分支</td>
-</tr>
-<tr>
-<td style="text-align:left">vscode -fileheader</td>
-<td style="text-align:left">　文件头部信息 (ctre+alt+i使用)</td>
-</tr>
-<tr>
-<td style="text-align:left">auto close tag</td>
-<td style="text-align:left">自动合并html</td>
-</tr>
-<tr>
-<td style="text-align:left">bracket pair colorizer</td>
-<td style="text-align:left">括号变色</td>
-</tr>
-<tr>
-<td style="text-align:left">power Mode  ***</td>
-<td style="text-align:left">超绚丽的 代码特效</td>
-</tr>
-<tr>
-<td style="text-align:left">path intellisense</td>
-<td style="text-align:left">找到相对路径中的文件</td>
-</tr>
-<tr>
-<td style="text-align:left">prettier - code formatter</td>
-<td style="text-align:left">代码自动格式化</td>
-</tr>
-<tr>
-<td style="text-align:left">vetur</td>
-<td style="text-align:left">vue格式化工具 （格式化 html”vetur.format.defaultFormatter.html”: “” ）</td>
-</tr>
-<tr>
-<td style="text-align:left">vim</td>
-<td style="text-align:left">使用 vim</td>
-</tr>
-<tr>
-<td style="text-align:left">Import Cost</td>
-<td style="text-align:left">检测导入文件的大小</td>
-</tr>
-<tr>
-<td style="text-align:left">Version Lens</td>
-<td style="text-align:left">显示package 软件包版本信息</td>
-</tr>
-<tr>
-<td style="text-align:left">Package watcher</td>
-<td style="text-align:left">package.json修改后 可以自动下载删除包 （单层目录才可以）</td>
-</tr>
-</tbody>
-</table>
-<h2 id="prettier-code-formatter-自定义格式化文件"><a href="#prettier-code-formatter-自定义格式化文件" class="headerlink" title="prettier - code formatter 自定义格式化文件"></a>prettier - code formatter 自定义格式化文件</h2><ul>
-<li>需要在工程中配置 .prettierrc 参数解释参考：<a href="https://segmentfault.com/a/1190000012909159" target="_blank" rel="noopener">https://segmentfault.com/a/1190000012909159</a></li>
-</ul>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   &#123;</span><br><span class="line">    <span class="attr">"eslintIntegration"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"stylelintIntegration"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"tabWidth"</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">"singleQuote"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"semi"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+        
+          
+          插件区
+
+
+插件名
+作用
+
+
+
+
+Markdown Preview Enhanced
+markdown的视图工具
+
+
+gitlens
+git每一行提示信息与分支
+
+
+vscode -fileheader
+　文件头部信息 (ctre+alt+i使用)
+
+
+auto close tag
+自动合并html
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/fe/vscode/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/fe/wechat/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="jiantong.liu">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="diary">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/20/fe/wechat/" class="post-title-link" itemprop="url">微信服务系列</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/20/fe/wechat/" itemprop="url">微信服务系列</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
 
-              <time title="Created: 2020-06-20 22:35:32" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">2020-06-20</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/FE/" itemprop="url" rel="index"><span itemprop="name">FE</span></a>
+                  <a href="/categories/FE/" itemprop="url" rel="index">
+                    <span itemprop="name">FE</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -1221,83 +1732,223 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="搭建微信公众号-详情看文档-https-github-com-node-webot"><a href="#搭建微信公众号-详情看文档-https-github-com-node-webot" class="headerlink" title="搭建微信公众号 (详情看文档)   https://github.com/node-webot"></a>搭建微信公众号 (详情看文档)   <a href="https://github.com/node-webot" target="_blank" rel="noopener">https://github.com/node-webot</a></h2><ul>
-<li>koa与co-wechat 来构建微信公众号自动回复功能</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Koa = <span class="built_in">require</span>(<span class="string">'koa'</span>);</span><br><span class="line"><span class="keyword">const</span> wechat = <span class="built_in">require</span>(<span class="string">'co-wechat'</span>);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>微信公共平台node库api  —-&gt;&gt;&gt;&gt;  <a href="http://doxmate.cool/node-webot/co-wechat-api/api.html#api_js_exports_registerTicketHandle" target="_blank" rel="noopener">http://doxmate.cool/node-webot/co-wechat-api/api.html#api_js_exports_registerTicketHandle</a></li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> WechatAPI = <span class="built_in">require</span>(<span class="string">'co-wechat-api'</span>);</span><br></pre></td></tr></table></figure>
+      
+
+      
+        
+          
+          搭建微信公众号 (详情看文档)   https://github.com/node-webot
+koa与co-wechat 来构建微信公众号自动回复功能
+
+12const Koa = require('koa');const wechat = require('co-wechat');
+
+微信公共平
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/06/20/fe/wechat/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
-  
-  
-  
 
+
+    
+  </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
 
+          </div>
+          
+
+
+          
+
+
         </div>
         
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
 
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="jiantong.liu">
+            
+              <p class="site-author-name" itemprop="name">jiantong.liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/newHotCat" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
       </div>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">jiantong.liu</span>
+
+  
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
 
 
 
@@ -1306,17 +1957,36 @@
 
 
 
+        
       </div>
     </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/muse.js"></script>
-<script src="/js/next-boot.js"></script>
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
@@ -1331,8 +2001,129 @@
 
 
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
 
 
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"> -->
+        <!-- <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
+        <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
 
   
 

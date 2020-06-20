@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="vim,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前言：| 本教程为私人笔记，记录vim代码高亮设置主题插件以及vimrc配置  先安装 vim  在用户根目录“~/”下创建 .bash_profile(本来存在进行修改) .vimrc 与 .vimrc.bundles 安装插件  这里贴出配置.bash_profile12345678# .bash_profile....#配置开始alias vi=vimalias vim=mvimalias">
+<meta name="keywords" content="vim">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vim插件与主题">
+<meta property="og:url" content="http://yoursite.com/2020/06/20/other/vim/index.html">
+<meta property="og:site_name" content="diary">
+<meta property="og:description" content="前言：| 本教程为私人笔记，记录vim代码高亮设置主题插件以及vimrc配置  先安装 vim  在用户根目录“~/”下创建 .bash_profile(本来存在进行修改) .vimrc 与 .vimrc.bundles 安装插件  这里贴出配置.bash_profile12345678# .bash_profile....#配置开始alias vi=vimalias vim=mvimalias">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-06-20T14:35:32.276Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vim插件与主题">
+<meta name="twitter:description" content="前言：| 本教程为私人笔记，记录vim代码高亮设置主题插件以及vimrc配置  先安装 vim  在用户根目录“~/”下创建 .bash_profile(本来存在进行修改) .vimrc 与 .vimrc.bundles 安装插件  这里贴出配置.bash_profile12345678# .bash_profile....#配置开始alias vi=vimalias vim=mvimalias">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/06/20/other/vim/">
+
+
+
+
+
+  <title>Vim插件与主题 | diary</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">diary</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">记录此刻 长期更新</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/other/vim/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jiantong.liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="diary">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Vim插件与主题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-20T22:35:32+08:00">
+                2020-06-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/other/" itemprop="url" rel="index">
+                    <span itemprop="name">other</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>| 本教程为私人笔记，记录vim代码高亮设置主题插件以及vimrc配置</p>
+<ol>
+<li>先安装 vim </li>
+<li>在用户根目录“~/”下创建 .bash_profile(本来存在进行修改) .vimrc 与 .vimrc.bundles</li>
+<li>安装插件</li>
+</ol>
+<h3 id="这里贴出配置"><a href="#这里贴出配置" class="headerlink" title="这里贴出配置"></a>这里贴出配置</h3><h5 id="bash-profile"><a href="#bash-profile" class="headerlink" title=".bash_profile"></a>.bash_profile</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .bash_profile</span></span><br><span class="line">....</span><br><span class="line"><span class="comment">#配置开始</span></span><br><span class="line"><span class="built_in">alias</span> vi=vim</span><br><span class="line"><span class="built_in">alias</span> vim=mvim</span><br><span class="line"><span class="built_in">alias</span> mvim=<span class="string">'/usr/local/bin/mvim -v'</span></span><br><span class="line"><span class="comment"># 配置结束</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h5 id="vimrc使用版本"><a href="#vimrc使用版本" class="headerlink" title=".vimrc使用版本"></a>.vimrc使用版本</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .vimrc 使用这个</span></span><br><span class="line"><span class="string">" Use Vim settings, rather then Vi settings. This setting must be as early as</span></span><br><span class="line"><span class="string">"</span> possible, as it has side effects.</span><br><span class="line"><span class="built_in">set</span> nocompatible</span><br><span class="line"></span><br><span class="line"><span class="string">" Highlight current line</span></span><br><span class="line"><span class="string">au WinLeave * set nocursorline nocursorcolumn</span></span><br><span class="line"><span class="string">au WinEnter * set cursorline cursorcolumn</span></span><br><span class="line"><span class="string">set cursorline cursorcolumn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Leader</span><br><span class="line"><span class="built_in">let</span> mapleader = <span class="string">","</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> backspace=2   <span class="string">" Backspace deletes like most programs in insert mode</span></span><br><span class="line"><span class="string">set nobackup</span></span><br><span class="line"><span class="string">set nowritebackup</span></span><br><span class="line"><span class="string">set noswapfile    "</span> http://robots.thoughtbot.com/post/18739402579/global-gitignore<span class="comment">#comment-458413287</span></span><br><span class="line"><span class="built_in">set</span> <span class="built_in">history</span>=50</span><br><span class="line"><span class="built_in">set</span> ruler         <span class="string">" show the cursor position all the time</span></span><br><span class="line"><span class="string">set showcmd       "</span> display incomplete commands</span><br><span class="line"><span class="built_in">set</span> incsearch     <span class="string">" do incremental searching</span></span><br><span class="line"><span class="string">set laststatus=2  "</span> Always display the status line</span><br><span class="line"><span class="built_in">set</span> autowrite     <span class="string">" Automatically :write before running commands</span></span><br><span class="line"><span class="string">set confirm       "</span> Need confrimation <span class="keyword">while</span> <span class="built_in">exit</span></span><br><span class="line"><span class="built_in">set</span> fileencodings=utf-8,gb18030,gbk,big5</span><br><span class="line"></span><br><span class="line"><span class="string">" Switch syntax highlighting on, when the terminal has colors</span></span><br><span class="line"><span class="string">"</span> Also switch on highlighting the last used search pattern.</span><br><span class="line"><span class="keyword">if</span> (&amp;t_Co &gt; 2 || has(<span class="string">"gui_running"</span>)) &amp;&amp; !exists(<span class="string">"syntax_on"</span>)</span><br><span class="line">  syntax on</span><br><span class="line">endif</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> filereadable(expand(<span class="string">"~/.vimrc.bundles"</span>))</span><br><span class="line">  <span class="built_in">source</span> ~/.vimrc.bundles</span><br><span class="line">endif</span><br><span class="line"></span><br><span class="line">filetype plugin indent on</span><br><span class="line"></span><br><span class="line">augroup vimrcEx</span><br><span class="line">  autocmd!</span><br><span class="line"></span><br><span class="line">  <span class="string">" When editing a file, always jump to the last known cursor position.</span></span><br><span class="line"><span class="string">  "</span> Don<span class="string">'t do it for commit messages, when the position is invalid, or when</span></span><br><span class="line"><span class="string">  " inside an event handler (happens when dropping a file on gvim).</span></span><br><span class="line"><span class="string">  autocmd BufReadPost *</span></span><br><span class="line"><span class="string">    \ if &amp;ft != '</span>gitcommit<span class="string">' &amp;&amp; line("'</span>\"<span class="string">") &gt; 0 &amp;&amp; line("</span><span class="string">'\"") &lt;= line("$") |</span></span><br><span class="line"><span class="string">    \   exe "normal g`\"" |</span></span><br><span class="line"><span class="string">    \ endif</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Cucumber navigation commands</span></span><br><span class="line"><span class="string">  autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix=_steps.rb</span></span><br><span class="line"><span class="string">  autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Set syntax highlighting for specific file types</span></span><br><span class="line"><span class="string">  autocmd BufRead,BufNewFile Appraisals set filetype=ruby</span></span><br><span class="line"><span class="string">  autocmd BufRead,BufNewFile *.md set filetype=markdown</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Enable spellchecking for Markdown</span></span><br><span class="line"><span class="string">  autocmd FileType markdown setlocal spell</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Automatically wrap at 80 characters for Markdown</span></span><br><span class="line"><span class="string">  autocmd BufRead,BufNewFile *.md setlocal textwidth=80</span></span><br><span class="line"><span class="string">augroup END</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Softtabs, 2 spaces</span></span><br><span class="line"><span class="string">set tabstop=2</span></span><br><span class="line"><span class="string">set shiftwidth=2</span></span><br><span class="line"><span class="string">set shiftround</span></span><br><span class="line"><span class="string">set expandtab</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Display extra whitespace</span></span><br><span class="line"><span class="string">set list listchars=tab:»·,trail:·</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher</span></span><br><span class="line"><span class="string">if executable('</span>ag<span class="string">')</span></span><br><span class="line"><span class="string">  " Use Ag over Grep</span></span><br><span class="line"><span class="string">  set grepprg=ag\ --nogroup\ --nocolor</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore</span></span><br><span class="line"><span class="string">  let g:ctrlp_user_command = '</span>ag %s -l --nocolor -g <span class="string">""</span><span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  " ag is fast enough that CtrlP doesn'</span>t need to cache</span><br><span class="line">  <span class="built_in">let</span> g:ctrlp_use_caching = 0</span><br><span class="line">endif</span><br><span class="line"></span><br><span class="line"><span class="string">" Color scheme</span></span><br><span class="line"><span class="string">colorscheme molokai</span></span><br><span class="line"><span class="string">highlight NonText guibg=#060606</span></span><br><span class="line"><span class="string">highlight Folded  guibg=#0A0A0A guifg=#9090D0</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Make it obvious <span class="built_in">where</span> 80 characters is</span><br><span class="line"><span class="built_in">set</span> textwidth=80</span><br><span class="line"><span class="built_in">set</span> colorcolumn=+1</span><br><span class="line"></span><br><span class="line"><span class="string">" Numbers</span></span><br><span class="line"><span class="string">set number</span></span><br><span class="line"><span class="string">set numberwidth=5</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Tab completion</span><br><span class="line"><span class="string">" will insert tab at beginning of line,</span></span><br><span class="line"><span class="string">"</span> will use completion <span class="keyword">if</span> not at beginning</span><br><span class="line"><span class="built_in">set</span> wildmode=list:longest,list:full</span><br><span class="line"><span class="keyword">function</span>! InsertTabWrapper()</span><br><span class="line">    <span class="built_in">let</span> col = col(<span class="string">'.'</span>) - 1</span><br><span class="line">    <span class="keyword">if</span> !col || getline(<span class="string">'.'</span>)[col - 1] !~ <span class="string">'\k'</span></span><br><span class="line">        <span class="built_in">return</span> <span class="string">"\&lt;tab&gt;"</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">return</span> <span class="string">"\&lt;c-p&gt;"</span></span><br><span class="line">    endif</span><br><span class="line">endfunction</span><br><span class="line">inoremap &lt;Tab&gt; &lt;c-r&gt;=InsertTabWrapper()&lt;cr&gt;</span><br><span class="line">inoremap &lt;S-Tab&gt; &lt;c-n&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing</span></span><br><span class="line"><span class="string">let g:Tlist_Ctags_Cmd="</span>ctags --exclude=<span class="string">'*.js'</span><span class="string">"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Index ctags from any project, including those outside Rails</span><br><span class="line">map &lt;Leader&gt;ct :!ctags -R .&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Switch between the last two files</span></span><br><span class="line"><span class="string">nnoremap &lt;leader&gt;&lt;leader&gt; &lt;c-^&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Get off my lawn</span><br><span class="line">nnoremap &lt;Left&gt; :echoe <span class="string">"Use h"</span>&lt;CR&gt;</span><br><span class="line">nnoremap &lt;Right&gt; :echoe <span class="string">"Use l"</span>&lt;CR&gt;</span><br><span class="line">nnoremap &lt;Up&gt; :echoe <span class="string">"Use k"</span>&lt;CR&gt;</span><br><span class="line">nnoremap &lt;Down&gt; :echoe <span class="string">"Use j"</span>&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" vim-rspec mappings</span></span><br><span class="line"><span class="string">nnoremap &lt;Leader&gt;t :call RunCurrentSpecFile()&lt;CR&gt;</span></span><br><span class="line"><span class="string">nnoremap &lt;Leader&gt;s :call RunNearestSpec()&lt;CR&gt;</span></span><br><span class="line"><span class="string">nnoremap &lt;Leader&gt;l :call RunLastSpec()&lt;CR&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Run commands that require an interactive shell</span><br><span class="line">nnoremap &lt;Leader&gt;r :RunInInteractiveShell&lt;space&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Treat &lt;li&gt; and &lt;p&gt; tags like the block tags they are</span></span><br><span class="line"><span class="string">let g:html_indent_tags = 'li\|p'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Open new split panes to right and bottom, <span class="built_in">which</span> feels more natural</span><br><span class="line"><span class="built_in">set</span> splitbelow</span><br><span class="line"><span class="built_in">set</span> splitright</span><br><span class="line"></span><br><span class="line"><span class="string">" Quicker window movement</span></span><br><span class="line"><span class="string">nnoremap &lt;C-j&gt; &lt;C-w&gt;j</span></span><br><span class="line"><span class="string">nnoremap &lt;C-k&gt; &lt;C-w&gt;k</span></span><br><span class="line"><span class="string">nnoremap &lt;C-h&gt; &lt;C-w&gt;h</span></span><br><span class="line"><span class="string">nnoremap &lt;C-l&gt; &lt;C-w&gt;l</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> configure syntastic syntax checking to check on open as well as save</span><br><span class="line"><span class="built_in">let</span> g:syntastic_check_on_open=1</span><br><span class="line"><span class="built_in">let</span> g:syntastic_html_tidy_ignore_errors=[<span class="string">" proprietary attribute \"ng-"</span>]</span><br><span class="line"></span><br><span class="line">autocmd Syntax javascript <span class="built_in">set</span> syntax=jquery <span class="string">" JQuery syntax support</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set matchpairs+=&lt;:&gt;</span></span><br><span class="line"><span class="string">set statusline+=%&#123;fugitive#statusline()&#125; "</span>  Git Hotness</span><br><span class="line"></span><br><span class="line"><span class="string">" Nerd Tree</span></span><br><span class="line"><span class="string">let NERDChristmasTree=0</span></span><br><span class="line"><span class="string">let NERDTreeWinSize=40</span></span><br><span class="line"><span class="string">let NERDTreeChDirMode=2</span></span><br><span class="line"><span class="string">let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']</span></span><br><span class="line"><span class="string">let NERDTreeShowBookmarks=1</span></span><br><span class="line"><span class="string">let NERDTreeWinPos="</span>left<span class="string">"</span></span><br><span class="line"><span class="string">autocmd vimenter * if !argc() | NERDTree | endif "</span> Automatically open a NERDTree <span class="keyword">if</span> no files <span class="built_in">where</span> specified</span><br><span class="line">autocmd bufenter * <span class="keyword">if</span> (winnr(<span class="string">"$"</span>) == 1 &amp;&amp; exists(<span class="string">"b:NERDTreeType"</span>) &amp;&amp; b:NERDTreeType == <span class="string">"primary"</span>) | q | endif <span class="string">" Close vim if the only window left open is a NERDTree</span></span><br><span class="line"><span class="string">nmap &lt;F5&gt; :NERDTreeToggle&lt;cr&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Tagbar</span><br><span class="line"><span class="built_in">let</span> g:tagbar_width=35</span><br><span class="line"><span class="built_in">let</span> g:tagbar_autofocus=1</span><br><span class="line">nmap &lt;F6&gt; :TagbarToggle&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Emmet</span></span><br><span class="line"><span class="string">let g:user_emmet_mode='i' "</span> <span class="built_in">enable</span> <span class="keyword">for</span> insert mode</span><br><span class="line"></span><br><span class="line"><span class="string">" Search results high light</span></span><br><span class="line"><span class="string">set hlsearch</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> nohlsearch shortcut</span><br><span class="line">nmap -hl :nohlsearch&lt;cr&gt;</span><br><span class="line">nmap +hl :<span class="built_in">set</span> hlsearch&lt;cr&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" Javascript syntax hightlight</span></span><br><span class="line"><span class="string">syntax enable</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> YouCompleteMe</span><br><span class="line"><span class="built_in">let</span> g:ycm_autoclose_preview_window_after_completion=1</span><br><span class="line">nnoremap &lt;leader&gt;g :YcmCompleter GoToDefinitionElseDeclaration&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" ctrlp</span></span><br><span class="line"><span class="string">set wildignore+=*/tmp/*,*.so,*.swp,*.zip     "</span> MacOSX/Linux<span class="string">"</span></span><br><span class="line"><span class="string">let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">set laststatus=2 "</span> Always display the status line</span><br><span class="line"><span class="built_in">set</span> statusline+=%&#123;fugitive<span class="comment">#statusline()&#125; "  Git Hotness</span></span><br><span class="line"></span><br><span class="line">nnoremap &lt;leader&gt;w :w&lt;CR&gt;</span><br><span class="line">nnoremap &lt;leader&gt;q :q&lt;CR&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">" RSpec.vim mappings</span></span><br><span class="line"><span class="string">map &lt;Leader&gt;t :call RunCurrentSpecFile()&lt;CR&gt;</span></span><br><span class="line"><span class="string">map &lt;Leader&gt;s :call RunNearestSpec()&lt;CR&gt;</span></span><br><span class="line"><span class="string">map &lt;Leader&gt;l :call RunLastSpec()&lt;CR&gt;</span></span><br><span class="line"><span class="string">map &lt;Leader&gt;a :call RunAllSpecs()&lt;CR&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Vim-instant-markdown doesn<span class="string">'t work in zsh</span></span><br><span class="line"><span class="string">set shell=bash\ -i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Snippets author</span></span><br><span class="line"><span class="string">let g:snips_author = '</span>Yuez<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">" Local config</span></span><br><span class="line"><span class="string">if filereadable($HOME . "/.vimrc.local")</span></span><br><span class="line"><span class="string">  source ~/.vimrc.local</span></span><br><span class="line"><span class="string">endif</span></span><br></pre></td></tr></table></figure>
+<h5 id="vimrc版本2"><a href="#vimrc版本2" class="headerlink" title=".vimrc版本2"></a>.vimrc版本2</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .vimrc  版本2  备用</span></span><br><span class="line"><span class="string">" Auto add head info</span></span><br><span class="line"><span class="string">"</span> .py file into add header</span><br><span class="line"><span class="keyword">function</span> HeaderPython()</span><br><span class="line">    call setline(1, <span class="string">"#!/usr/bin/env python"</span>)</span><br><span class="line">    call append(1, <span class="string">"# -*- coding: utf-8 -*-"</span>)</span><br><span class="line">    normal G</span><br><span class="line">    normal o</span><br><span class="line">endf</span><br><span class="line">autocmd bufnewfile *.py call HeaderPython()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">" 这里设置插件</span></span><br><span class="line"><span class="string">if filereadable(expand("</span>~/.vimrc.bundles<span class="string">"))</span></span><br><span class="line"><span class="string">  source ~/.vimrc.bundles</span></span><br><span class="line"><span class="string">endif</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>设置行号显示</span><br><span class="line"><span class="built_in">set</span> number</span><br><span class="line"></span><br><span class="line"><span class="string">"将行号设置为相对行号</span></span><br><span class="line"><span class="string">set relativenumber</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>显示标尺</span><br><span class="line"><span class="built_in">set</span> ruler</span><br><span class="line"></span><br><span class="line"><span class="string">" 编码</span></span><br><span class="line"><span class="string">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1</span></span><br><span class="line"><span class="string">set fileencoding=utf-8</span></span><br><span class="line"><span class="string">set encoding=utf-8</span></span><br><span class="line"><span class="string">set fencs=utf-8,gbk,gb2312,gb18030</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>语法高亮</span><br><span class="line">syntax <span class="built_in">enable</span></span><br><span class="line">syntax on</span><br><span class="line"></span><br><span class="line"><span class="string">" 高亮</span></span><br><span class="line"><span class="string">hi pythonSelf            ctermfg=174 guifg=#6094DB cterm=bold gui=bold</span></span><br><span class="line"><span class="string">let python_highlight_all=1</span></span><br><span class="line"><span class="string">syntax enable</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> 状态行颜色</span><br><span class="line">highlight StatusLine guifg=SlateBlue guibg=Yellow</span><br><span class="line">highlight StatusLineNC guifg=Gray guibg=White</span><br><span class="line"></span><br><span class="line"><span class="string">" 增强模式中的命令行自动完成操作</span></span><br><span class="line"><span class="string">set wildmenu</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> 总是显示状态行</span><br><span class="line"><span class="built_in">set</span> laststatus=2</span><br><span class="line"></span><br><span class="line"><span class="string">"命令行补全参数</span></span><br><span class="line"><span class="string">set wildmenu</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>设置tab键空4格</span><br><span class="line"><span class="built_in">set</span> tabstop=4</span><br><span class="line"></span><br><span class="line"><span class="string">"自动检测文件类型</span></span><br><span class="line"><span class="string">filetype plugin indent on</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>开启自动缩进，智能缩进</span><br><span class="line"><span class="built_in">set</span> autoindent</span><br><span class="line"><span class="built_in">set</span> cindent</span><br><span class="line"><span class="built_in">set</span> smartindent</span><br><span class="line"><span class="built_in">set</span> shiftwidth=4</span><br><span class="line"></span><br><span class="line"><span class="string">"映射光标在窗口间移动的快捷键</span></span><br><span class="line"><span class="string">nmap &lt;C-H&gt; &lt;C-W&gt;h</span></span><br><span class="line"><span class="string">nmap &lt;C-J&gt; &lt;C-W&gt;j</span></span><br><span class="line"><span class="string">nmap &lt;C-K&gt; &lt;C-W&gt;k</span></span><br><span class="line"><span class="string">nmap &lt;C-L&gt; &lt;C-W&gt;l</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span>基本主题配置</span><br><span class="line"><span class="built_in">set</span> <span class="built_in">bg</span>=dark    		   <span class="string">"设置背景为黑色</span></span><br><span class="line"><span class="string">colorscheme gruvbox    "</span>设置主题为 gruvbox</span><br><span class="line"><span class="built_in">set</span> guioptions=        <span class="string">"去掉两边的scrollbar</span></span><br><span class="line"><span class="string">set guifont=Monaco:h17 "</span>设置字体和字的大小</span><br><span class="line"><span class="built_in">set</span> cuc</span><br><span class="line"><span class="built_in">set</span> cul</span><br><span class="line"><span class="built_in">set</span> incsearch		  <span class="string">"输入搜索内容时就显示搜索结果</span></span><br><span class="line"><span class="string">set ignorecase</span></span><br><span class="line"><span class="string">set hlsearch		  "</span>搜索时高亮显示被找到的文本</span><br><span class="line"></span><br><span class="line"><span class="string">"airline settings.</span></span><br><span class="line"><span class="string">let g:airline_theme = 'simple'</span></span><br><span class="line"><span class="string">let g:airline_powerline_fonts = 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">if !exists('g:airline_symbols')</span></span><br><span class="line"><span class="string">  let g:airline_symbols = &#123;&#125;</span></span><br><span class="line"><span class="string">endif</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">let g:airline_left_sep = ''</span></span><br><span class="line"><span class="string">let g:airline_left_alt_sep = ''</span></span><br><span class="line"><span class="string">let g:airline_right_sep = ''</span></span><br><span class="line"><span class="string">let g:airline_right_alt_sep = ''</span></span><br><span class="line"><span class="string">let g:airline_symbols.branch = ''</span></span><br><span class="line"><span class="string">let g:airline_symbols.readonly = ''</span></span><br><span class="line"><span class="string">let g:airline_symbols.linenr = ''</span></span><br><span class="line"><span class="string">let g:airline#extensions#tabline#enabled = 1</span></span><br><span class="line"><span class="string">"</span> show absolute file path <span class="keyword">in</span> status line</span><br><span class="line"><span class="built_in">let</span> g:airline_section_c = <span class="string">'%&lt;%F%m %#__accent_red#%&#123;airline#util#wrap(airline#parts#readonly(),0)&#125;%#__restore__#'</span></span><br><span class="line"><span class="string">" show tab number in tab line</span></span><br><span class="line"><span class="string">let g:airline#extensions#tabline#tab_nr_type = 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">map &lt;F5&gt; :NERDTreeToggle&lt;CR&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="vimrc-bundles配置插件"><a href="#vimrc-bundles配置插件" class="headerlink" title=".vimrc.bundles配置插件"></a>.vimrc.bundles配置插件</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .vimrc.bundles</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> &amp;compatible</span><br><span class="line">  <span class="built_in">set</span> nocompatible</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">filetype off</span><br><span class="line"><span class="built_in">set</span> rtp+=~/.vim/bundle/vundle/</span><br><span class="line">call vundle<span class="comment">#rc()</span></span><br><span class="line"></span><br><span class="line"><span class="string">" Let Vundle manage Vundle</span></span><br><span class="line"><span class="string">Bundle 'gmarik/vundle'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"</span> Define bundles via Github repos</span><br><span class="line">Bundle <span class="string">'christoomey/vim-run-interactive'</span></span><br><span class="line">Bundle <span class="string">'Valloric/YouCompleteMe'</span></span><br><span class="line">Bundle <span class="string">'marijnh/tern_for_vim'</span></span><br><span class="line">Bundle <span class="string">'croaky/vim-colors-github'</span></span><br><span class="line">Bundle <span class="string">'danro/rename.vim'</span></span><br><span class="line">Bundle <span class="string">'majutsushi/tagbar'</span></span><br><span class="line">Bundle <span class="string">'kchmck/vim-coffee-script'</span></span><br><span class="line">Bundle <span class="string">'kien/ctrlp.vim'</span></span><br><span class="line">Bundle <span class="string">'pbrisbin/vim-mkdir'</span></span><br><span class="line">Bundle <span class="string">'scrooloose/syntastic'</span></span><br><span class="line">Bundle <span class="string">'slim-template/vim-slim'</span></span><br><span class="line">Bundle <span class="string">'thoughtbot/vim-rspec'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-bundler'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-endwise'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-fugitive'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-rails'</span></span><br><span class="line">Bundle <span class="string">'tpope/vim-surround'</span></span><br><span class="line">Bundle <span class="string">'vim-ruby/vim-ruby'</span></span><br><span class="line">Bundle <span class="string">'vim-scripts/ctags.vim'</span></span><br><span class="line">Bundle <span class="string">'vim-scripts/matchit.zip'</span></span><br><span class="line">Bundle <span class="string">'vim-scripts/tComment'</span></span><br><span class="line">Bundle <span class="string">"mattn/emmet-vim"</span></span><br><span class="line">Bundle <span class="string">"scrooloose/nerdtree"</span></span><br><span class="line">Bundle <span class="string">"Lokaltog/vim-powerline"</span></span><br><span class="line">Bundle <span class="string">"godlygeek/tabular"</span></span><br><span class="line">Bundle <span class="string">"msanders/snipmate.vim"</span></span><br><span class="line">Bundle <span class="string">"jelera/vim-javascript-syntax"</span></span><br><span class="line">Bundle <span class="string">"altercation/vim-colors-solarized"</span></span><br><span class="line">Bundle <span class="string">"othree/html5.vim"</span></span><br><span class="line">Bundle <span class="string">"xsbeats/vim-blade"</span></span><br><span class="line">Bundle <span class="string">"Raimondi/delimitMate"</span></span><br><span class="line">Bundle <span class="string">"groenewege/vim-less"</span></span><br><span class="line">Bundle <span class="string">"evanmiller/nginx-vim-syntax"</span></span><br><span class="line">Bundle <span class="string">"Lokaltog/vim-easymotion"</span></span><br><span class="line">Bundle <span class="string">"tomasr/molokai"</span></span><br><span class="line">Bundle <span class="string">"klen/python-mode"</span></span><br><span class="line">Bundle <span class="string">"morhetz/gruvbox"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> filereadable(expand(<span class="string">"~/.vimrc.bundles.local"</span>))</span><br><span class="line">  <span class="built_in">source</span> ~/.vimrc.bundles.local</span><br><span class="line">endif</span><br><span class="line"></span><br><span class="line">filetype on</span><br></pre></td></tr></table></figure>
+<p>参考文章：</p>
+<ul>
+<li>vim插件搜索 <a href="https://vimawesome.com/" target="_blank" rel="noopener">https://vimawesome.com/</a></li>
+<li>自动补全  <a href="https://www.jianshu.com/p/4a8b0e3503fa" target="_blank" rel="noopener">https://www.jianshu.com/p/4a8b0e3503fa</a></li>
+<li>插件主题  <a href="https://vitan.me/2018/06/19/Vim-Vundle-Markdown/" target="_blank" rel="noopener">https://vitan.me/2018/06/19/Vim-Vundle-Markdown/</a></li>
+<li>管理vim插件  <a href="https://linux.cn/article-5880-1.html" target="_blank" rel="noopener">https://linux.cn/article-5880-1.html</a></li>
+<li>配置原地址 <a href="https://github.com/samlaudev/ConfigurationFiles/blob/master/vim/vimrc" target="_blank" rel="noopener">https://github.com/samlaudev/ConfigurationFiles/blob/master/vim/vimrc</a></li>
+<li>这个vim配置不错 <a href="https://www.jianshu.com/p/a0b452f8f720" target="_blank" rel="noopener">https://www.jianshu.com/p/a0b452f8f720</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vim/" rel="tag"># vim</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/20/other/hexo/" rel="next" title="hexo 标签不显示问题">
+                <i class="fa fa-chevron-left"></i> hexo 标签不显示问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/06/20/other/python/" rel="prev" title="python Scrapyd 爬虫日记">
+                python Scrapyd 爬虫日记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
+    </div>
+
+  
+
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="jiantong.liu">
+            
+              <p class="site-author-name" itemprop="name">jiantong.liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/newHotCat" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#这里贴出配置"><span class="nav-number">2.</span> <span class="nav-text">这里贴出配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#bash-profile"><span class="nav-number">2.0.1.</span> <span class="nav-text">.bash_profile</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#vimrc使用版本"><span class="nav-number">2.0.2.</span> <span class="nav-text">.vimrc使用版本</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#vimrc版本2"><span class="nav-number">2.0.3.</span> <span class="nav-text">.vimrc版本2</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#vimrc-bundles配置插件"><span class="nav-number">2.0.4.</span> <span class="nav-text">.vimrc.bundles配置插件</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jiantong.liu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"> -->
+        <!-- <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
+        <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitment({
+            id: window.location.pathname, 
+            owner: 'newhotcat',
+            repo: 'newhotcat.github.io',
+            
+            oauth: {
+            
+            
+                client_secret: '64808e73ba31f4ac740e8e57017e26bab063bb89',
+            
+                client_id: '17ddc971a5f3ee422159'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

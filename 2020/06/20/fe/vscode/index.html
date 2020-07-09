@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="diary">
 <meta property="og:description" content="插件区   插件名 作用     Markdown Preview Enhanced markdown的视图工具   gitlens git每一行提示信息与分支   vscode -fileheader 　文件头部信息 (ctre+alt+i使用)   auto close tag 自动合并html   bracket pair colorizer 括号变色   power Mode  *** 超">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-06-20T14:35:32.273Z">
+<meta property="og:updated_time" content="2020-07-09T06:23:33.832Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vscode 插件与功能使用">
 <meta name="twitter:description" content="插件区   插件名 作用     Markdown Preview Enhanced markdown的视图工具   gitlens git每一行提示信息与分支   vscode -fileheader 　文件头部信息 (ctre+alt+i使用)   auto close tag 自动合并html   bracket pair colorizer 括号变色   power Mode  *** 超">
@@ -407,12 +407,27 @@
 <td style="text-align:left">Package watcher</td>
 <td style="text-align:left">package.json修改后 可以自动下载删除包 （单层目录才可以）</td>
 </tr>
+<tr>
+<td style="text-align:left">Debugger for chrome</td>
+<td style="text-align:left">谷歌调试debug</td>
+</tr>
 </tbody>
 </table>
 <h2 id="prettier-code-formatter-自定义格式化文件"><a href="#prettier-code-formatter-自定义格式化文件" class="headerlink" title="prettier - code formatter 自定义格式化文件"></a>prettier - code formatter 自定义格式化文件</h2><ul>
 <li>需要在工程中配置 .prettierrc 参数解释参考：<a href="https://segmentfault.com/a/1190000012909159" target="_blank" rel="noopener">https://segmentfault.com/a/1190000012909159</a></li>
 </ul>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   &#123;</span><br><span class="line">    <span class="attr">"eslintIntegration"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"stylelintIntegration"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"tabWidth"</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">"singleQuote"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"semi"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Debugger-for-chrome-谷歌调试debug"><a href="#Debugger-for-chrome-谷歌调试debug" class="headerlink" title="Debugger for chrome - 谷歌调试debug"></a>Debugger for chrome - 谷歌调试debug</h2><h3 id="vscode-调试-TS-react-项目"><a href="#vscode-调试-TS-react-项目" class="headerlink" title="vscode 调试 TS react 项目"></a>vscode 调试 TS react 项目</h3><ol>
+<li>先安装vscode插件 Debugger for chrome</li>
+<li><p>配置launch 文件</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// 使用 IntelliSense 了解相关属性。 </span></span><br><span class="line">  <span class="comment">// 悬停以查看现有属性的描述。</span></span><br><span class="line">  <span class="comment">// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387</span></span><br><span class="line">  <span class="attr">"version"</span>: <span class="string">"0.2.0"</span>,</span><br><span class="line">  <span class="attr">"configurations"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"type"</span>: <span class="string">"chrome"</span>,</span><br><span class="line">      <span class="attr">"request"</span>: <span class="string">"launch"</span>,</span><br><span class="line">      <span class="attr">"name"</span>: <span class="string">"Launch Chrome against localhost"</span>,</span><br><span class="line">      <span class="attr">"url"</span>: <span class="string">"http://qci1.aliyun.com/userMarketing/"</span>,</span><br><span class="line">      <span class="comment">// 本地项目中的路径</span></span><br><span class="line">      <span class="attr">"webRoot"</span>: <span class="string">"$&#123;workspaceFolder&#125;/src"</span>,</span><br><span class="line">      <span class="comment">// 一定要false 为了在当前文件中调试，而不是跳到 “源映射中的只读内联内容”</span></span><br><span class="line">      <span class="attr">"sourceMaps"</span>: <span class="literal">false</span>,</span><br><span class="line">      <span class="comment">// 未了解</span></span><br><span class="line">      <span class="attr">"skipFiles"</span>: [<span class="string">"node_modules/**"</span>],</span><br><span class="line">      <span class="comment">// 加载webpack中的脚本资源</span></span><br><span class="line">      <span class="attr">"sourceMapPathOverrides"</span>: &#123;</span><br><span class="line">        <span class="attr">"webpack:///src/*"</span>: <span class="string">"$&#123;webRoot&#125;/*"</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>命令窗口中优先启动本项目</p>
+</li>
+<li>vscode中打开debug</li>
+<li>打断点，成功</li>
+</ol>
+
       
     </div>
     
@@ -542,7 +557,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -564,7 +579,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-count">30</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -607,7 +622,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#插件区"><span class="nav-number">1.</span> <span class="nav-text">插件区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#prettier-code-formatter-自定义格式化文件"><span class="nav-number">2.</span> <span class="nav-text">prettier - code formatter 自定义格式化文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#插件区"><span class="nav-number">1.</span> <span class="nav-text">插件区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#prettier-code-formatter-自定义格式化文件"><span class="nav-number">2.</span> <span class="nav-text">prettier - code formatter 自定义格式化文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Debugger-for-chrome-谷歌调试debug"><span class="nav-number">3.</span> <span class="nav-text">Debugger for chrome - 谷歌调试debug</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vscode-调试-TS-react-项目"><span class="nav-number">3.1.</span> <span class="nav-text">vscode 调试 TS react 项目</span></a></li></ol></li></ol></div>
             
 
           </div>
